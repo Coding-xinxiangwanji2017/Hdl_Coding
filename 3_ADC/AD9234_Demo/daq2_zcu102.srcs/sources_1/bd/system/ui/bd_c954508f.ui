@@ -1,0 +1,207 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port rx_data_0_p -pg 1 -y 1270 -defaultsOSRD -right
+preplace port spi1_miso -pg 1 -y 1380 -defaultsOSRD
+preplace port clk_out200M -pg 1 -y 1980 -defaultsOSRD
+preplace port start1 -pg 1 -y 1820 -defaultsOSRD
+preplace port rx_data_1_n -pg 1 -y 1110 -defaultsOSRD -right
+preplace port clk_in1_0 -pg 1 -y 2030 -defaultsOSRD
+preplace port ps_intr_00 -pg 1 -y 540 -defaultsOSRD
+preplace port spi1_mosi -pg 1 -y 500 -defaultsOSRD
+preplace port tx_data_2_n -pg 1 -y 100 -defaultsOSRD
+preplace port rx_data_2_n -pg 1 -y 970 -defaultsOSRD -right
+preplace port rx_data_1_p -pg 1 -y 1130 -defaultsOSRD -right
+preplace port rx_out_clk -pg 1 -y 1470 -defaultsOSRD
+preplace port ps_intr_01 -pg 1 -y 560 -defaultsOSRD
+preplace port lmfc_clk -pg 1 -y 1910 -defaultsOSRD
+preplace port ps_intr_02 -pg 1 -y 580 -defaultsOSRD
+preplace port ps_intr_14 -pg 1 -y 1320 -defaultsOSRD
+preplace port lmfc_edge -pg 1 -y 1940 -defaultsOSRD
+preplace port tx_data_0_n -pg 1 -y 40 -defaultsOSRD
+preplace port tx_data_2_p -pg 1 -y 120 -defaultsOSRD
+preplace port rx_data_2_p -pg 1 -y 990 -defaultsOSRD -right
+preplace port ps_intr_03 -pg 1 -y 600 -defaultsOSRD
+preplace port ps_intr_15 -pg 1 -y 1340 -defaultsOSRD
+preplace port tx_data_3_n -pg 1 -y 1780 -defaultsOSRD
+preplace port ps_intr_04 -pg 1 -y 620 -defaultsOSRD
+preplace port tx_data_0_p -pg 1 -y 20 -defaultsOSRD
+preplace port rx_data_3_n -pg 1 -y 830 -defaultsOSRD -right
+preplace port ps_intr_05 -pg 1 -y 640 -defaultsOSRD
+preplace port spi1_sclk -pg 1 -y 520 -defaultsOSRD
+preplace port adc_fda -pg 1 -y 2040 -defaultsOSRD -right
+preplace port tx_data_3_p -pg 1 -y 1800 -defaultsOSRD
+preplace port ps_intr_06 -pg 1 -y 660 -defaultsOSRD
+preplace port adc_fdb -pg 1 -y 2080 -defaultsOSRD -right
+preplace port tx_data_1_n -pg 1 -y 80 -defaultsOSRD
+preplace port rx_data_3_p -pg 1 -y 850 -defaultsOSRD -right
+preplace port rx_ref_clk_0 -pg 1 -y 330 -defaultsOSRD
+preplace port ps_intr_07 -pg 1 -y 680 -defaultsOSRD
+preplace port spi0_sclk -pg 1 -y 470 -defaultsOSRD
+preplace port rx_sysref_0 -pg 1 -y 1440 -defaultsOSRD -right
+preplace port ps_intr_08 -pg 1 -y 1200 -defaultsOSRD
+preplace port tx_data_1_p -pg 1 -y 60 -defaultsOSRD
+preplace port rx_data_0_n -pg 1 -y 1250 -defaultsOSRD -right
+preplace port ps_intr_09 -pg 1 -y 1220 -defaultsOSRD
+preplace port spi0_miso -pg 1 -y 1400 -defaultsOSRD
+preplace port spi0_mosi -pg 1 -y 410 -defaultsOSRD
+preplace portBus rx_sync_0 -pg 1 -y 1850 -defaultsOSRD
+preplace portBus gpio_o -pg 1 -y 370 -defaultsOSRD
+preplace portBus gpio_t -pg 1 -y 390 -defaultsOSRD
+preplace portBus gpio_i -pg 1 -y 1360 -defaultsOSRD
+preplace portBus spi1_csn -pg 1 -y 310 -defaultsOSRD
+preplace portBus spi0_csn -pg 1 -y 180 -defaultsOSRD
+preplace inst axi_ad9680_jesd -pg 1 -lvl 11 -y 1440 -defaultsOSRD -orient R180
+preplace inst axi_ad9680_fifo -pg 1 -lvl 5 -y 1560 -defaultsOSRD -orient R180
+preplace inst sys_ps8_emio_spi0_s_i_GND -pg 1 -lvl 5 -y 900 -defaultsOSRD
+preplace inst axi_hp2_interconnect -pg 1 -lvl 3 -y 1540 -defaultsOSRD -orient R180
+preplace inst sys_ps8_emio_spi0_ss_i_n_VCC -pg 1 -lvl 5 -y 1080 -defaultsOSRD
+preplace inst util_daq2_xcvr -pg 1 -lvl 12 -y 1250 -defaultsOSRD -orient R180
+preplace inst axi_hp3_interconnect -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst axi_ad9680_cpack -pg 1 -lvl 6 -y 1360 -defaultsOSRD -orient R180
+preplace inst axi_ad9680_xcvr -pg 1 -lvl 13 -y 1590 -defaultsOSRD -orient R180
+preplace inst sys_concat_intc_0 -pg 1 -lvl 4 -y 610 -defaultsOSRD
+preplace inst axi_ad9680_jesd_rstgen -pg 1 -lvl 2 -y 440 -defaultsOSRD
+preplace inst axi_ad9680_dma -pg 1 -lvl 4 -y 1600 -defaultsOSRD -orient R180
+preplace inst sys_concat_intc_1 -pg 1 -lvl 4 -y 1270 -defaultsOSRD
+preplace inst sys_ps8_emio_spi1_ss_i_n_VCC -pg 1 -lvl 5 -y 1350 -defaultsOSRD
+preplace inst sys_ps8_emio_spi1_ss_i_n_VCC1 -pg 1 -lvl 9 -y 1900 -defaultsOSRD
+preplace inst sys_rstgen -pg 1 -lvl 1 -y 430 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 8 -y 830 -defaultsOSRD -resize 153 421
+preplace inst axi_ad9680_core -pg 1 -lvl 10 -y 1340 -defaultsOSRD -orient R180
+preplace inst start_LD_0 -pg 1 -lvl 10 -y 1860 -defaultsOSRD
+preplace inst format_9234_timestamp_0 -pg 1 -lvl 8 -y 1350 -defaultsOSRD -orient R180
+preplace inst sys_ps8_emio_spi1_s_i_GND -pg 1 -lvl 5 -y 1170 -defaultsOSRD
+preplace inst sys_ps8_emio_spi1_sclk_i_GND -pg 1 -lvl 5 -y 1260 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 10 -y 2020 -defaultsOSRD
+preplace inst axi_cpu_interconnect -pg 1 -lvl 10 -y 790 -defaultsOSRD
+preplace inst sys_ps8_emio_spi0_sclk_i_GND -pg 1 -lvl 5 -y 990 -defaultsOSRD
+preplace inst spi1_csn_concat -pg 1 -lvl 13 -y 310 -defaultsOSRD
+preplace inst sys_ps8 -pg 1 -lvl 5 -y 540 -defaultsOSRD
+preplace inst spi0_csn_concat -pg 1 -lvl 13 -y 180 -defaultsOSRD
+preplace netloc S00_AXI_2 1 3 10 800 1780 NJ 1780 NJ 1780 NJ 1780 NJ 1780 NJ 1780 NJ 1780 NJ 1780 NJ 1780 6200J
+preplace netloc axi_ad9680_xcvr_up_ch_0 1 12 1 6170
+preplace netloc axi_ad9680_fifo_dma_wdata 1 4 1 1190
+preplace netloc sys_concat_intc_0_dout 1 4 1 1160
+preplace netloc sys_ps8_emio_spi0_ss_o_n 1 5 8 1940 170 NJ 170 NJ 170 NJ 170 NJ 170 3830J 160 NJ 160 NJ
+preplace netloc axi_ad9680_xcvr_up_ch_1 1 12 1 N
+preplace netloc sys_ps8_emio_spi0_sclk_o 1 5 9 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ
+preplace netloc sys_ps8_emio_spi1_ss2_o_n 1 5 8 2010J 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 6200
+preplace netloc S00_AXI_4 1 3 1 760
+preplace netloc axi_ad9680_xcvr_up_ch_2 1 12 1 6140
+preplace netloc clk_in1_0_1 1 0 10 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ
+preplace netloc axi_ad9680_dma_s_axis_xfer_req 1 3 3 810 150 NJ 150 1920
+preplace netloc ps_intr_06_1 1 0 4 NJ 660 NJ 660 NJ 660 NJ
+preplace netloc axi_ad9680_xcvr_up_ch_3 1 12 1 6180
+preplace netloc axi_ad9680_xcvr_up_es_0 1 12 1 6180
+preplace netloc axi_ad9680_cpack_adc_data 1 5 1 2010
+preplace netloc rx_data_3_n_1 1 12 2 NJ 830 NJ
+preplace netloc axi_ad9680_xcvr_up_es_1 1 12 1 N
+preplace netloc ps_intr_02_1 1 0 4 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc spi1_miso_1 1 0 6 NJ 1380 NJ 1380 NJ 1380 780J 1410 NJ 1410 1890
+preplace netloc axi_ad9680_xcvr_up_es_2 1 12 1 6130
+preplace netloc axi_ad9680_jesd_sync 1 10 4 3850 1850 NJ 1850 NJ 1850 NJ
+preplace netloc ps_intr_01_1 1 0 4 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc sys_ps8_emio_gpio_o 1 5 9 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 6190J 380 6510J
+preplace netloc axi_hp3_interconnect_M00_AXI 1 4 1 1170
+preplace netloc axi_ad9680_xcvr_up_es_3 1 12 1 6150
+preplace netloc ps_intr_09_1 1 0 4 NJ 1220 NJ 1220 NJ 1220 NJ
+preplace netloc axi_ad9680_jesd_irq 1 3 8 830 1420 NJ 1420 2000J 1490 NJ 1490 2480J 1520 NJ 1520 N 1520 N
+preplace netloc axi_ad9680_jesd_rx_sof 1 10 1 3800
+preplace netloc sys_ps8_pl_resetn0 1 0 6 -220 170 NJ 170 NJ 170 NJ 170 NJ 170 1880
+preplace netloc rx_data_0_p_1 1 12 2 NJ 1270 NJ
+preplace netloc spi1_csn_concat_dout 1 13 1 NJ
+preplace netloc clk_wiz_0_clk_out200M 1 10 4 3810J 1980 NJ 1980 NJ 1980 NJ
+preplace netloc ps_intr_05_1 1 0 4 NJ 640 NJ 640 NJ 640 NJ
+preplace netloc sys_ps8_emio_gpio_t 1 5 9 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 6160J 390 NJ
+preplace netloc sys_ps8_emio_spi0_m_o 1 5 9 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ
+preplace netloc spi0_miso_1 1 0 6 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 1900
+preplace netloc util_daq2_xcvr_tx_2_n 1 11 3 4520 90 NJ 90 6510J
+preplace netloc rx_data_1_n_1 1 12 2 NJ 1110 NJ
+preplace netloc axi_cpu_interconnect_M04_AXI 1 10 4 3820J 690 NJ 690 NJ 690 6500
+preplace netloc ps_intr_07_1 1 0 4 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc util_daq2_xcvr_tx_2_p 1 11 3 4530 110 NJ 110 6510J
+preplace netloc sys_ps8_emio_spi0_ss1_o_n 1 5 8 1930 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc ps_intr_00_1 1 0 4 NJ 540 NJ 540 NJ 540 NJ
+preplace netloc axi_ad9680_core_adc_valid_0 1 8 2 N 1320 3440
+preplace netloc axi_ad9680_core_adc_valid_1 1 8 2 N 1300 3460
+preplace netloc axi_ad9680_jesd_rx_data_tdata 1 10 1 3810
+preplace netloc sys_ps8_emio_spi0_ss2_o_n 1 5 8 1960 210 NJ 210 NJ 210 3200J 190 NJ 190 NJ 190 NJ 190 6190J
+preplace netloc sys_ps8_emio_spi1_ss_o_n 1 5 8 2000 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ
+preplace netloc format_9234_timestamp_0_o_adc_enable_0 1 6 2 2310 1330 2520
+preplace netloc sys_ps8_emio_spi1_ss_i_n_VCC_dout 1 5 1 1820
+preplace netloc format_9234_timestamp_0_o_adc_enable_1 1 6 2 2300 1320 2550
+preplace netloc rx_ref_clk_0_1 1 0 13 -230J 190 NJ 190 NJ 190 NJ 190 1140J 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 6150
+preplace netloc sys_ps8_emio_spi0_ss_i_n_VCC_dout 1 5 1 1850
+preplace netloc util_daq2_xcvr_rx_0 1 11 1 4460
+preplace netloc util_daq2_xcvr_tx_0_n 1 11 3 4460 40 NJ 40 NJ
+preplace netloc util_daq2_xcvr_rx_1 1 11 1 4450
+preplace netloc ps_intr_08_1 1 0 4 NJ 1200 NJ 1200 NJ 1200 NJ
+preplace netloc rx_data_2_p_1 1 12 2 NJ 990 NJ
+preplace netloc util_daq2_xcvr_rx_2 1 11 1 4430
+preplace netloc util_daq2_xcvr_tx_0_p 1 11 3 4450 20 NJ 20 NJ
+preplace netloc util_daq2_xcvr_rx_3 1 11 1 4420
+preplace netloc axi_ad9680_dma_irq 1 3 1 820
+preplace netloc util_daq2_xcvr_rx_out_clk_0 1 1 13 140 1420 NJ 1420 750J 1440 NJ 1440 1980 1480 2310 1410 2490 1530 3180 1530 3450 1530 3790 1580 4400 1820 6160 1420 6510
+preplace netloc sys_ps8_emio_spi1_sclk_i_GND_dout 1 5 1 1830
+preplace netloc sys_ps8_emio_spi0_sclk_i_GND_dout 1 5 1 1860
+preplace netloc gpio_i_1 1 0 6 NJ 1360 NJ 1360 NJ 1360 790J 1430 NJ 1430 1910
+preplace netloc sys_ps8_emio_spi1_m_o 1 5 9 1990J 500 NJ 500 NJ 500 NJ 500 NJ 500 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc ps_intr_04_1 1 0 4 NJ 620 NJ 620 NJ 620 NJ
+preplace netloc format_9234_timestamp_0_waveform_0 1 7 1 2580
+preplace netloc axi_ad9680_xcvr_up_pll_rst 1 12 1 6200
+preplace netloc format_9234_timestamp_0_o_ps_irq 1 3 5 830 140 NJ 140 NJ 140 N 140 2500
+preplace netloc format_9234_timestamp_0_waveform_1 1 7 1 2600
+preplace netloc axi_ad9680_jesd_rstgen_peripheral_reset 1 2 5 NJ 440 NJ 440 1160J 210 1950 1500 2300
+preplace netloc axi_cpu_interconnect_M05_AXI 1 10 1 3780
+preplace netloc axi_ad9680_jesd_lmfc_edge_0 1 10 4 3820 1940 NJ 1940 NJ 1940 NJ
+preplace netloc axi_ad9680_fifo_adc_wovf 1 4 7 1210 160 NJ 160 NJ 160 NJ 160 NJ 160 N 160 3790
+preplace netloc rx_data_1_p_1 1 12 2 NJ 1130 NJ
+preplace netloc format_9234_timestamp_0_o_adc_valid_0 1 6 2 N 1370 2510
+preplace netloc ps_intr_03_1 1 0 4 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc format_9234_timestamp_0_o_adc_valid_1 1 6 2 N 1310 2540
+preplace netloc axi_ad9680_dma_s_axis_ready 1 4 2 1170J 1670 1820
+preplace netloc sys_200m_clk 1 5 1 N
+preplace netloc format_9234_timestamp_0_out_0 1 6 2 N 1350 2530
+preplace netloc format_9234_timestamp_0_out_1 1 6 2 N 1290 2560
+preplace netloc ps_intr_15_1 1 0 4 NJ 1340 NJ 1340 NJ 1340 NJ
+preplace netloc rx_data_0_n_1 1 12 2 NJ 1250 NJ
+preplace netloc axi_ad9680_core_adc_data_0 1 7 3 2590 1490 3200 1330 N
+preplace netloc sys_ps8_emio_spi0_s_i_GND_dout 1 5 1 1870
+preplace netloc axi_ad9680_core_adc_data_1 1 7 3 2610 1140 3170 1270 N
+preplace netloc sysref_2 1 11 3 4390J 1810 6190J 1440 NJ
+preplace netloc axi_ad9680_fifo_dma_wr 1 4 1 1200
+preplace netloc sys_ps8_emio_spi1_ss1_o_n 1 5 8 1980J 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 N
+preplace netloc axi_cpu_interconnect_M06_AXI 1 10 2 NJ 840 4380
+preplace netloc axi_ad9680_jesd_lmfc_clk_0 1 10 4 3840 1910 NJ 1910 NJ 1910 NJ
+preplace netloc axi_ad9680_jesd_phy_en_char_align 1 10 3 3830 710 NJ 710 6120
+preplace netloc sys_ps8_emio_spi1_s_i_GND_dout 1 5 1 1840
+preplace netloc axi_ad9680_jesd_rstgen_peripheral_aresetn 1 2 7 480J 470 NJ 470 1150J 190 NJ 190 NJ 190 N 190 3160
+preplace netloc ps_intr_14_1 1 0 4 NJ 1320 NJ 1320 NJ 1320 NJ
+preplace netloc axi_cpu_interconnect_M07_AXI 1 4 7 NJ 1690 NJ 1690 NJ 1690 NJ 1690 NJ 1690 N 1690 3770
+preplace netloc start_LD_0_start1 1 7 7 2570J 1500 3190J 1500 N 1500 3780 1860 N 1860 N 1860 6500
+preplace netloc axi_ad9680_cpack_adc_valid 1 5 1 2020
+preplace netloc sys_ps8_emio_spi1_ss_i_n_VCC1_dout 1 9 1 3490
+preplace netloc sys_cpu_clk 1 0 14 -210 340 NJ 340 NJ 340 760 430 1180 220 1970 600 N 600 N 600 N 600 3490 1050 3820 1290 4440 1790 6120 1400 6490
+preplace netloc util_daq2_xcvr_tx_1_n 1 11 3 4500 80 NJ 80 NJ
+preplace netloc sys_concat_intc_1_dout 1 4 1 1200
+preplace netloc sys_cpu_resetn 1 1 13 130 530 NJ 530 770 1450 1150 1450 1990J 1510 N 1510 N 1510 N 1510 3480 1220 3810 1270 4410 1800 6110 1430 6480
+preplace netloc spi0_csn_concat_dout 1 13 1 NJ
+preplace netloc util_daq2_xcvr_tx_3_n 1 11 3 4480 1830 6210J 1780 NJ
+preplace netloc sys_ps8_emio_spi1_sclk_o 1 5 9 2020J 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ
+preplace netloc rx_data_3_p_1 1 12 2 NJ 850 NJ
+preplace netloc axi_hp2_interconnect_M00_AXI 1 2 3 490 480 NJ 480 NJ
+preplace netloc axi_ad9680_core_adc_enable_0 1 8 2 N 1280 3450
+preplace netloc S00_AXI_1 1 5 5 NJ 270 N 270 N 270 N 270 3490
+preplace netloc util_daq2_xcvr_tx_1_p 1 11 3 4470 60 NJ 60 NJ
+preplace netloc rx_data_2_n_1 1 12 2 NJ 970 NJ
+preplace netloc util_daq2_xcvr_tx_3_p 1 11 3 4490 1840 6220J 1800 NJ
+preplace netloc util_daq2_xcvr_tx_out_clk_0 1 11 2 4510 720 6110
+preplace netloc axi_ad9680_core_adc_enable_1 1 8 2 N 1260 3470
+levelinfo -pg 1 -250 -40 310 620 990 1520 2160 2460 3020 3330 3630 4240 5989 6351 6550 -top -200 -bot 2860
+",
+}
+{
+   da_axi4_cnt: "1",
+}

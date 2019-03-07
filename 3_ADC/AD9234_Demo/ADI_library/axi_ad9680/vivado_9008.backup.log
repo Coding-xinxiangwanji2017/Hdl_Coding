@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul 30 09:56:44 2018
+# Process ID: 9008
+# Current directory: D:/adi/hdl/library/axi_ad9680
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8764 D:\adi\hdl\library\axi_ad9680\axi_ad9680.xpr
+# Log file: D:/adi/hdl/library/axi_ad9680/vivado.log
+# Journal file: D:/adi/hdl/library/axi_ad9680\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/adi/hdl/library/axi_ad9680/axi_ad9680.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi/hdl/library'.
+INFO: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/adi/hdl/library' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/adi/hdl/library/axi_ad9680'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 811.234 ; gain = 94.840
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 30 10:02:24 2018...

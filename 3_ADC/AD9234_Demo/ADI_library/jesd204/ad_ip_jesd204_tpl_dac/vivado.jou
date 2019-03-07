@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jul 17 10:41:46 2018
+# Process ID: 10364
+# Current directory: D:/adi/hdl/library/jesd204/ad_ip_jesd204_tpl_dac
+# Command line: vivado.exe -mode batch -source ad_ip_jesd204_tpl_dac_ip.tcl
+# Log file: D:/adi/hdl/library/jesd204/ad_ip_jesd204_tpl_dac/vivado.log
+# Journal file: D:/adi/hdl/library/jesd204/ad_ip_jesd204_tpl_dac\vivado.jou
+#-----------------------------------------------------------
+source ad_ip_jesd204_tpl_dac_ip.tcl

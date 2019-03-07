@@ -1,0 +1,47 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port rx_data_tvalid -pg 1 -y 240 -defaultsOSRD
+preplace port s_axi_aclk -pg 1 -y 320 -defaultsOSRD
+preplace port sysref -pg 1 -y 190 -defaultsOSRD
+preplace port phy_en_char_align -pg 1 -y 200 -defaultsOSRD
+preplace port s_axi -pg 1 -y 240 -defaultsOSRD
+preplace port rx_phy0 -pg 1 -y 110 -defaultsOSRD
+preplace port rx_phy1 -pg 1 -y 130 -defaultsOSRD
+preplace port device_clk -pg 1 -y 360 -defaultsOSRD
+preplace port rx_phy2 -pg 1 -y 150 -defaultsOSRD
+preplace port rx_phy3 -pg 1 -y 170 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -y 340 -defaultsOSRD
+preplace port irq -pg 1 -y 330 -defaultsOSRD
+preplace portBus sync -pg 1 -y 180 -defaultsOSRD
+preplace portBus rx_eof -pg 1 -y 260 -defaultsOSRD
+preplace portBus rx_sof -pg 1 -y 280 -defaultsOSRD
+preplace portBus rx_data_tdata -pg 1 -y 220 -defaultsOSRD
+preplace inst rx -pg 1 -lvl 2 -y 180 -defaultsOSRD
+preplace inst rx_axi -pg 1 -lvl 1 -y 310 -defaultsOSRD
+preplace netloc rx_phy3_1 1 0 2 NJ 170 NJ
+preplace netloc rx_rx_status 1 0 3 30 10 NJ 10 620
+preplace netloc s_axi_aclk_1 1 0 1 NJ
+preplace netloc s_axi_1 1 0 1 NJ
+preplace netloc rx_phy_en_char_align 1 2 1 NJ
+preplace netloc s_axi_aresetn_1 1 0 1 NJ
+preplace netloc rx_rx_eof 1 2 1 NJ
+preplace netloc sysref_1 1 0 2 NJ 190 300J
+preplace netloc rx_phy0_1 1 0 2 NJ 110 NJ
+preplace netloc rx_axi_rx_cfg 1 1 1 310
+preplace netloc rx_rx_data 1 2 1 NJ
+preplace netloc rx_axi_core_reset 1 1 1 320
+preplace netloc rx_sync 1 2 1 NJ
+preplace netloc device_clk_1 1 0 2 20 180 320J
+preplace netloc rx_phy1_1 1 0 2 NJ 130 NJ
+preplace netloc rx_rx_event 1 0 3 50 30 NJ 30 600
+preplace netloc rx_axi_irq 1 1 2 330J 330 NJ
+preplace netloc rx_rx_sof 1 2 1 NJ
+preplace netloc rx_phy2_1 1 0 2 NJ 150 NJ
+preplace netloc rx_rx_ilas_config 1 0 3 40 20 NJ 20 610
+preplace netloc rx_rx_valid 1 2 1 NJ
+levelinfo -pg 1 0 180 470 640 -top 0 -bot 430
+",
+}
+

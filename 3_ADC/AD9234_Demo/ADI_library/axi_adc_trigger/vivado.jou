@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul 26 13:04:40 2018
+# Process ID: 22324
+# Current directory: D:/adi/hdl/library/axi_adc_trigger
+# Command line: vivado.exe -mode batch -source axi_adc_trigger_ip.tcl
+# Log file: D:/adi/hdl/library/axi_adc_trigger/vivado.log
+# Journal file: D:/adi/hdl/library/axi_adc_trigger\vivado.jou
+#-----------------------------------------------------------
+source axi_adc_trigger_ip.tcl

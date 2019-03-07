@@ -1,0 +1,937 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 14616
+License: Customer
+
+Current time: 	Wed Sep 26 11:51:47 CST 2018
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 73 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	xiehb
+User home directory: C:/Users/xiehb
+User working directory: D:/adi_9234/ad9234-5-SPI04610
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/xiehb/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/xiehb/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/xiehb/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	D:/adi_9234/ad9234-5-SPI04610/vivado.log
+Vivado journal file location: 	D:/adi_9234/ad9234-5-SPI04610/vivado.jou
+Engine tmp dir: 	D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7
+
+GUI allocated memory:	182 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 560 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57816kb) [00:00:10]
+// [Engine Memory]: 491 MB (+363764kb) [00:00:10]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: D:\adi_9234\ad9234-5-SPI04610\daq2_zcu102.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// [GUI Memory]: 65 MB (+4367kb) [00:00:13]
+// [Engine Memory]: 562 MB (+47771kb) [00:00:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 614 MB. GUI used memory: 38 MB. Current time: 9/26/18 11:51:49 AM CST
+// [Engine Memory]: 753 MB (+171086kb) [00:00:18]
+// [Engine Memory]: 957 MB (+174882kb) [00:00:23]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+1229kb) [00:00:35]
+// [GUI Memory]: 77 MB (+4694kb) [00:00:40]
+// Tcl Message: open_project D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/adi_9234/ad9234-4-clk' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi/ad9234_1/library'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi_9234/waveform'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi_9234/waveform-2'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 1153.918 ; gain = 477.184 
+// Project name: daq2_zcu102; location: D:/adi_9234/ad9234-5-SPI04610; part: xczu9eg-ffvb1156-2-e
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: Adding cell -- xilinx.com:ip:ila:6.2 - ila_0 
+// Tcl Message: INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details. 
+// Tcl Message: Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- xilinx.com:module_ref:start_LD:1.0 - start_LD_0 Adding cell -- zvision:user:format_9234_timestamp:1.0 - format_9234_timestamp_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi1_ss_i_n_VCC1 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us 
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- analog.com:user:axi_jesd204_rx:1.0 - rx_axi Adding cell -- analog.com:user:jesd204_rx:1.0 - rx Successfully read diagram <system> from BD file <D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.srcs/sources_1/bd/system/system.bd> 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 82 MB (+1175kb) [00:01:36]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1153.918 ; gain = 0.000 
+// 'bA' command handler elapsed time: 21 seconds
+// Elapsed time: 22 seconds
+dismissDialog("Open Block Design"); // bs (cj)
+// WARNING: HTimer (RSBAttributeDisplay Update Pin Markers Timer) is taking too long to process. Increasing delay to 3000 ms.
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /format_9234_timestamp_0_o_ps_irq 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /format_9234_timestamp_0_o_ps_irq 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /format_9234_timestamp_0_o_ps_irq 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /format_9234_timestamp_0_o_ps_irq 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /format_9234_timestamp_0_o_ps_irq 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /format_9234_timestamp_0_o_ps_irq 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_fifo_adc_wovf 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_fifo_adc_wovf 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_fifo_adc_wovf 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_fifo_adc_wovf 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_fifo_adc_wovf 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_fifo_adc_wovf 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_ss_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_ss_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_rstgen_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_rstgen_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_ss2_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_ss2_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_ss2_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_ss2_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi1_ss_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi1_ss_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_rstgen_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_rstgen_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi1_ss2_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi1_ss2_o_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_gpio_t 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_gpio_t 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_m_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_m_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_m_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_m_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_sclk_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_sclk_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_sclk_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi0_sclk_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi1_m_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /sys_ps8_emio_spi1_m_o 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_phy_en_char_align 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_phy_en_char_align 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_phy_en_char_align 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_jesd_phy_en_char_align 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_0_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_0_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_1_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_2_n 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_3_p 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_tx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_ref_clk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_ref_clk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_rx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /util_daq2_xcvr_rx_out_clk_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_xcvr_up_pll_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_ad9680_xcvr_up_pll_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_2_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_2_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_p_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_n_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rx_data_3_n_1 
+// [GUI Memory]: 87 MB (+1095kb) [00:01:50]
+// [GUI Memory]: 92 MB (+903kb) [00:01:51]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /spi1_csn_concat_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /spi1_csn_concat_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /spi1_csn_concat_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /spi1_csn_concat_dout 
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("system_top.v", 247, 232); // cd (w, cj)
+// [GUI Memory]: 97 MB (+436kb) [00:02:08]
+selectCodeEditor("system_top.v", 437, 267); // cd (w, cj)
+selectCodeEditor("system_top.v", 334, 256); // cd (w, cj)
+// Elapsed time: 15 seconds
+selectCodeEditor("system_top.v", 243, 421); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 115 seconds
+selectCodeEditor("system_top.v", 170, 336); // cd (w, cj)
+selectCodeEditor("system_top.v", 170, 336, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("system_top.v", 247, 371); // cd (w, cj)
+// [GUI Memory]: 104 MB (+1719kb) [00:04:36]
+// Elapsed time: 62 seconds
+selectCodeEditor("system_top.v", 43, 389); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("system_top.v", 226, 384); // cd (w, cj)
+selectCodeEditor("system_top.v", 226, 363); // cd (w, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("system_top.v", 133, 409); // cd (w, cj)
+selectCodeEditor("system_top.v", 133, 409, false, false, false, false, true); // cd (w, cj) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking too long to process. Increasing delay to 4000 ms.
+// Elapsed time: 16 seconds
+selectCodeEditor("system_top.v", 26, 392); // cd (w, cj)
+selectCodeEditor("system_top.v", 25, 410); // cd (w, cj)
+selectCodeEditor("system_top.v", 341, 277); // cd (w, cj)
+selectCodeEditor("system_top.v", 338, 297); // cd (w, cj)
+selectCodeEditor("system_top.v", 246, 272); // cd (w, cj)
+selectCodeEditor("system_top.v", 246, 272, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 133, 275); // cd (w, cj)
+selectCodeEditor("system_top.v", 133, 275, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 328, 306); // cd (w, cj)
+selectCodeEditor("system_top.v", 11, 293); // cd (w, cj)
+selectCodeEditor("system_top.v", 14, 308); // cd (w, cj)
+selectCodeEditor("system_top.v", 378, 331); // cd (w, cj)
+selectCodeEditor("system_top.v", 379, 316); // cd (w, cj)
+selectCodeEditor("system_top.v", 379, 294); // cd (w, cj)
+selectCodeEditor("system_top.v", 366, 212); // cd (w, cj)
+selectCodeEditor("system_top.v", 369, 244); // cd (w, cj)
+selectCodeEditor("system_top.v", 12, 200); // cd (w, cj)
+selectCodeEditor("system_top.v", 210, 194); // cd (w, cj)
+selectCodeEditor("system_top.v", 210, 194, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 305, 408); // cd (w, cj)
+selectCodeEditor("system_top.v", 291, 364); // cd (w, cj)
+selectCodeEditor("system_top.v", 291, 359); // cd (w, cj)
+selectCodeEditor("system_top.v", 193, 427); // cd (w, cj)
+selectCodeEditor("system_top.v", 112, 416); // cd (w, cj)
+selectCodeEditor("system_top.v", 112, 411); // cd (w, cj)
+selectCodeEditor("system_top.v", 112, 411, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 122, 407); // cd (w, cj)
+selectCodeEditor("system_top.v", 122, 407, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 77, 386); // cd (w, cj)
+selectCodeEditor("system_top.v", 77, 386, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("system_top.v", 88, 366); // cd (w, cj)
+// [GUI Memory]: 110 MB (+577kb) [00:08:13]
+// Elapsed time: 53 seconds
+selectCodeEditor("system_top.v", 185, 279); // cd (w, cj)
+selectCodeEditor("system_top.v", 130, 334); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("system_top.v", 278, 356); // cd (w, cj)
+selectCodeEditor("system_top.v", 272, 342); // cd (w, cj)
+selectCodeEditor("system_top.v", 263, 336); // cd (w, cj)
+selectCodeEditor("system_top.v", 251, 329); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 12 seconds
+selectCodeEditor("system_top.v", 165, 392); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("system_top.v", 175, 410); // cd (w, cj)
+selectCodeEditor("system_top.v", 220, 415); // cd (w, cj)
+selectCodeEditor("system_top.v", 206, 313); // cd (w, cj)
+// Elapsed time: 39 seconds
+selectCodeEditor("system_top.v", 65, 372); // cd (w, cj)
+selectCodeEditor("system_top.v", 65, 372, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 80, 373); // cd (w, cj)
+selectCodeEditor("system_top.v", 80, 373, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 195, 349); // cd (w, cj)
+selectCodeEditor("system_top.v", 153, 350); // cd (w, cj)
+selectCodeEditor("system_top.v", 172, 291); // cd (w, cj)
+selectCodeEditor("system_top.v", 9, 298); // cd (w, cj)
+selectCodeEditor("system_top.v", 10, 296); // cd (w, cj)
+selectCodeEditor("system_top.v", 238, 344); // cd (w, cj)
+selectCodeEditor("system_top.v", 242, 341); // cd (w, cj)
+selectCodeEditor("system_top.v", 243, 343); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("system_top.v", 244, 382); // cd (w, cj)
+typeControlKey((HResource) null, "system_top.v", 'c'); // cd (w, cj)
+selectCodeEditor("system_top.v", 236, 231); // cd (w, cj)
+selectCodeEditor("system_top.v", 79, 234); // cd (w, cj)
+typeControlKey((HResource) null, "system_top.v", 'v'); // cd (w, cj)
+selectCodeEditor("system_top.v", 7, 233); // cd (w, cj)
+selectCodeEditor("system_top.v", 11, 235); // cd (w, cj)
+selectCodeEditor("system_top.v", 34, 243); // cd (w, cj)
+selectCodeEditor("system_top.v", 395, 300); // cd (w, cj)
+selectCodeEditor("system_top.v", 105, 239); // cd (w, cj)
+selectCodeEditor("system_top.v", 110, 238); // cd (w, cj)
+selectCodeEditor("system_top.v", 491, 396); // cd (w, cj)
+selectCodeEditor("system_top.v", 351, 364); // cd (w, cj)
+selectCodeEditor("system_top.v", 52, 255); // cd (w, cj)
+selectCodeEditor("system_top.v", 52, 255, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 115, 256); // cd (w, cj)
+selectCodeEditor("system_top.v", 114, 273); // cd (w, cj)
+selectCodeEditor("system_top.v", 118, 293); // cd (w, cj)
+selectCodeEditor("system_top.v", 117, 310); // cd (w, cj)
+selectCodeEditor("system_top.v", 120, 313); // cd (w, cj)
+selectCodeEditor("system_top.v", 254, 311); // cd (w, cj)
+selectCodeEditor("system_top.v", 253, 301); // cd (w, cj)
+selectCodeEditor("system_top.v", 247, 287); // cd (w, cj)
+selectCodeEditor("system_top.v", 244, 280); // cd (w, cj)
+selectCodeEditor("system_top.v", 237, 257); // cd (w, cj)
+selectCodeEditor("system_top.v", 322, 342); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_spi1 : daq2_spi (daq2_spi.v)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_spi1 : daq2_spi (daq2_spi.v)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("daq2_spi.v", 164, 157); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 164, 157, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 161, 180); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 161, 180, false, false, false, false, true); // cd (w, cj) - Double Click
+// [GUI Memory]: 116 MB (+963kb) [00:12:46]
+// Elapsed time: 181 seconds
+selectCodeEditor("daq2_spi.v", 167, 293); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 167, 293, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_top.v", 1); // k (j, cj)
+selectCodeEditor("system_top.v", 143, 332); // cd (w, cj)
+selectCodeEditor("system_top.v", 143, 332, false, false, false, false, true); // cd (w, cj) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 164 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "daq2_spi.v", 2); // k (j, cj)
+selectCodeEditor("daq2_spi.v", 416, 311); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("daq2_spi.v", 195, 308); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 195, 308, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 715, 281); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 90, 446); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 90, 447, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("daq2_spi.v", 275, 218); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 300, 284); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 340, 280); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 206, 233); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 206, 233, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 187, 252); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 187, 252, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 190, 232); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 190, 232, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 194, 86); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 194, 86, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("daq2_spi.v", 99, 260); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 99, 260, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 39 seconds
+selectCodeEditor("daq2_spi.v", 159, 368); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 159, 368, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 99, 370); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 99, 370, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 160, 374); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 160, 374, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 73, 409); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 73, 409, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 159, 367); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 159, 367, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("daq2_spi.v", 153, 412); // cd (w, cj)
+selectCodeEditor("daq2_spi.v", 153, 414, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_top.v", 1); // k (j, cj)
+// [GUI Memory]: 122 MB (+235kb) [00:22:43]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XDC]", 6, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XDC]", 6, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XDC, system_constr.xdc]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XDC, system_constr.xdc]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("system_constr.xdc", 312, 174); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 409, 450); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 178, 189); // cd (w, cj)
+// Elapsed time: 144 seconds
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 957 MB. GUI used memory: 62 MB. Current time: 9/26/18 12:21:52 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 957 MB. GUI used memory: 58 MB. Current time: 9/26/18 12:51:53 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 957 MB. GUI used memory: 59 MB. Current time: 9/26/18 1:21:53 PM CST
+// Elapsed time: 5076 seconds
+selectCodeEditor("system_constr.xdc", 350, 206); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 5, 221); // cd (w, cj)
+// Elapsed time: 32 seconds
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "system_constr.xdc", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+// Elapsed time: 17 seconds
+selectCodeEditor("system_constr.xdc", 0, 119); // cd (w, cj)
+// Elapsed time: 18 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "fda"); // l (aP, cj)
+selectCodeEditor("system_constr.xdc", 504, 219); // cd (w, cj)
+// Elapsed time: 152 seconds
+selectCodeEditor("system_constr.xdc", 593, 232); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 596, 312); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 591, 272); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 0, 269); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 2, 329); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 603, 346); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 597, 326); // cd (w, cj)
+// Elapsed time: 25 seconds
+selectCodeEditor("system_constr.xdc", 606, 343); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 589, 331); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 540, 335); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 530, 351); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 127, 280); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_top.v", 1); // k (j, cj)
+selectCodeEditor("system_top.v", 216, 194); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("system_top.v", 152, 172); // cd (w, cj)
+selectCodeEditor("system_top.v", 152, 172, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "system_top.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_constr.xdc", 3); // k (j, cj)
+selectCodeEditor("system_constr.xdc", 591, 276); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 571, 274); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 0, 296); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 571, 293); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 571, 293, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_constr.xdc", 473, 290); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 473, 290, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 528, 295); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 527, 305); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 525, 321); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 524, 337); // cd (w, cj)
+// Elapsed time: 173 seconds
+selectCodeEditor("system_constr.xdc", 253, 300); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 204, 290); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 545, 299); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 583, 347); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 204, 364); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 480, 363); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 643, 382); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 573, 321); // cd (w, cj)
+// Elapsed time: 31 seconds
+selectCodeEditor("system_constr.xdc", 495, 385); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 135, 397); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 114, 393); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 499, 365); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 137, 389); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 209, 368); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 480, 367); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 480, 367, false, false, false, false, true); // cd (w, cj) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_top.v", 1); // k (j, cj)
+selectCodeEditor("system_top.v", 160, 158); // cd (w, cj)
+selectCodeEditor("system_top.v", 160, 158, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "system_top.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_constr.xdc", 3); // k (j, cj)
+selectCodeEditor("system_constr.xdc", 472, 363); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 472, 363, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 584, 373); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("system_constr.xdc", 110, 119); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 116, 286); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 71, 143); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 129, 330); // cd (w, cj)
+typeControlKey((HResource) null, "system_constr.xdc", 'v'); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 957 MB. GUI used memory: 58 MB. Current time: 9/26/18 1:51:53 PM CST
+selectCodeEditor("system_constr.xdc", 122, 339); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 10, 384); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 8, 446); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("system_constr.xdc", 107, 321); // cd (w, cj)
+typeControlKey(null, null, 'z');
+selectCodeEditor("system_constr.xdc", 9, 315); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 5, 144); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 4, 201); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 3, 230); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 7, 252); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 194, 273); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 4, 315); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 227, 315); // cd (w, cj)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("system_constr.xdc", 0, 164); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 0, 213); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 0, 201); // cd (w, cj)
+// Elapsed time: 26 seconds
+selectCodeEditor("system_constr.xdc", 95, 236); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 350, 259); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 351, 272); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 345, 425); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 426, 284); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 424, 301); // cd (w, cj)
+selectCodeEditor("system_constr.xdc", 423, 315); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // e (aU, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Sep 26 13:53:31 2018] Launched synth_1... Run output will be captured here: D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Sep 26 13:53:32 2018] Launched impl_1... Run output will be captured here: D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// Elapsed time: 226 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cj)
+// Tcl Message: launch_sdk -workspace D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk/system_top.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk/system_top.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 957 MB. GUI used memory: 63 MB. Current time: 9/26/18 2:21:54 PM CST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 5000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 6000 ms.
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 2713 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Sep 26 14:42:38 2018] Launched impl_1... Run output will be captured here: D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.runs/impl_1/runme.log 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 7000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 5000 ms.
+// ah (cj): Bitstream Generation Completed: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 8000 ms.
+// Elapsed time: 280 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bs (cj):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,014 MB (+9421kb) [02:55:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,145 MB. GUI used memory: 59 MB. Current time: 9/26/18 2:47:29 PM CST
+// [Engine Memory]: 1,521 MB (+478405kb) [02:55:58]
+// [Engine Memory]: 1,605 MB (+8592kb) [02:56:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,732 MB. GUI used memory: 59 MB. Current time: 9/26/18 2:47:44 PM CST
+// [Engine Memory]: 1,875 MB (+198283kb) [02:56:13]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// [Engine Memory]: 2,170 MB (+210943kb) [02:56:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,200 MB. GUI used memory: 59 MB. Current time: 9/26/18 2:47:59 PM CST
+// [Engine Memory]: 2,428 MB (+157203kb) [02:56:33]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// HMemoryUtils.trashcanNow. Engine heap size: 2,531 MB. GUI used memory: 59 MB. Current time: 9/26/18 2:48:14 PM CST
+// [Engine Memory]: 2,599 MB (+51928kb) [02:56:43]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,644 MB. GUI used memory: 59 MB. Current time: 9/26/18 2:48:26 PM CST
+// [Engine Memory]: 2,748 MB (+20085kb) [02:56:52]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2017.4/data/parts/xilinx/zynquplus/devint/zynquplus/xczu9eg/xczu9eg.xgd; ZipEntry: xczu9eg_detail.xgd elapsed time: 1.2s
+// [GUI Memory]: 129 MB (+954kb) [02:56:54]
+// [Engine Memory]: 2,905 MB (+20757kb) [02:56:54]
+// [GUI Memory]: 136 MB (+241kb) [02:56:54]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 12433 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2017.4 INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top_board.xdc] Finished Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top_board.xdc] Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top_early.xdc] Finished Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top_early.xdc] Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.runs/impl_1/.Xil/Vivado-28796-DESKTOP-9BSENP7/dbg_hub_CV.0/out/xsdbm.xdc:10] 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [d:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.runs/impl_1/.Xil/Vivado-28796-DESKTOP-9BSENP7/dbg_hub_CV.0/out/xsdbm.xdc:10] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2880.082 ; gain = 642.984 
+// Tcl Message: Finished Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top.xdc] Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top_late.xdc] Finished Parsing XDC File [D:/adi_9234/ad9234-5-SPI04610/.Xil/Vivado-14616-DESKTOP-9BSENP7/dcp0/system_top_late.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2957.969 ; gain = 77.344 
+// Tcl Message: Restored from archive | CPU: 10.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2957.969 ; gain = 77.344 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1414 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 1360 instances   IBUF => IBUF (IBUFCTRL, INBUF): 16 instances   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instances   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 3 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 17 instances   RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 16 instances  
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 9000 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:01:25 ; elapsed = 00:01:14 . Memory (MB): peak = 3150.770 ; gain = 1996.852 
+// ExpRunCommands.openImplResults elapsed time: 79.9s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// [GUI Memory]: 143 MB (+269kb) [02:57:03]
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 151 MB (+634kb) [02:57:06]
+// [GUI Memory]: 162 MB (+3916kb) [02:57:07]
+// [GUI Memory]: 171 MB (+291kb) [02:57:09]
+// [Engine Memory]: 3,155 MB (+109077kb) [02:57:09]
+// [GUI Memory]: 179 MB (+137kb) [02:57:10]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 18.2s
+// [GUI Memory]: 190 MB (+2325kb) [02:57:10]
+// [GUI Memory]: 200 MB (+99kb) [02:57:12]
+// [Engine Memory]: 3,315 MB (+2232kb) [02:57:12]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,335 MB. GUI used memory: 163 MB. Current time: 9/26/18 2:48:47 PM CST
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 211 MB (+917kb) [02:57:14]
+// 'dO' command handler elapsed time: 91 seconds
+// Elapsed time: 91 seconds
+dismissDialog("Open Implemented Design"); // bs (cj)
+// [Engine Memory]: 3,507 MB (+27645kb) [02:57:17]
+// [Engine Memory]: 3,791 MB (+114512kb) [02:57:20]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [Engine Memory]: 4,012 MB (+32860kb) [02:57:20]
+// [Engine Memory]: 4,267 MB (+56638kb) [02:57:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,271 MB. GUI used memory: 180 MB. Current time: 9/26/18 2:49:04 PM CST
+// [Engine Memory]: 4,567 MB (+91280kb) [02:57:34]
+// PAPropertyPanels.initPanels (spi1_csn_0_OBUF_inst (OBUF)) elapsed time: 0.3s
+// [GUI Memory]: 225 MB (+3112kb) [02:57:37]
+// [Engine Memory]: 4,841 MB (+47459kb) [02:57:38]
+// [Engine Memory]: 5,164 MB (+84930kb) [02:57:46]
+// RouteApi::initDelayMediator elapsed time: 43.5s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 387 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cj): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (N, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (cj)
+// Tcl Message: file copy -force D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.runs/impl_1/system_top.sysdef D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk/system_top.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cj): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cj)
+// Tcl Message: launch_sdk -workspace D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk/system_top.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-5-SPI04610/daq2_zcu102.sdk/system_top.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 171 MB. Current time: 9/26/18 3:19:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 167 MB. Current time: 9/26/18 3:49:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 168 MB. Current time: 9/26/18 4:19:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 168 MB. Current time: 9/26/18 4:49:05 PM CST
+// Elapsed time: 7044 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_top.v", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_constr.xdc", 4); // k (j, cj)
+// Elapsed time: 799 seconds
+selectCodeEditor("system_constr.xdc", 230, 284); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 168 MB. Current time: 9/26/18 5:19:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,164 MB. GUI used memory: 169 MB. Current time: 9/26/18 5:49:06 PM CST
+// Elapsed time: 2703 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cj)
+// Device view-level: 0.1
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_top.v", 2); // k (j, cj)
+selectCodeEditor("system_top.v", 326, 211); // cd (w, cj)
+selectCodeEditor("system_top.v", 202, 212); // cd (w, cj)
+selectCodeEditor("system_top.v", 33, 219); // cd (w, cj)
+selectCodeEditor("system_top.v", 43, 211); // cd (w, cj)
+selectCodeEditor("system_top.v", 40, 221); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("system_top.v", 123, 417); // cd (w, cj)
+selectCodeEditor("system_top.v", 123, 417, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 122, 430); // cd (w, cj)
+selectCodeEditor("system_top.v", 122, 430, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("system_top.v", 258, 309); // cd (w, cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("system_top.v", 433, 512); // cd (w, cj)
+selectCodeEditor("system_top.v", 435, 520); // cd (w, cj)
+selectCodeEditor("system_top.v", 435, 534); // cd (w, cj)
+selectCodeEditor("system_top.v", 123, 505); // cd (w, cj)
+selectCodeEditor("system_top.v", 250, 503); // cd (w, cj)
+selectCodeEditor("system_top.v", 157, 503); // cd (w, cj)
+selectCodeEditor("system_top.v", 155, 503, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("system_top.v", 145, 510); // cd (w, cj)
+selectCodeEditor("system_top.v", 145, 510, false, false, false, false, true); // cd (w, cj) - Double Click

@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log axi_ad9680.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_ad9680.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source axi_ad9680.tcl -notrace
+Command: synth_design -top axi_ad9680 -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2018.06' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25332 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 390.273 ; gain = 98.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'axi_ad9680' [D:/adi/ad9234_1/library/axi_ad9680/axi_ad9680.v:38]
+	Parameter ID bound to: 0 - type: integer 
+ERROR: [Synth 8-439] module 'ad_ip_jesd204_tpl_adc' not found [D:/adi/ad9234_1/library/axi_ad9680/axi_ad9680.v:94]
+	Parameter ID bound to: 0 - type: integer 
+	Parameter NUM_CHANNELS bound to: 32'sb00000000000000000000000000000010 
+	Parameter CHANNEL_WIDTH bound to: 32'sb00000000000000000000000000001110 
+	Parameter NUM_LANES bound to: 32'sb00000000000000000000000000000100 
+	Parameter TWOS_COMPLEMENT bound to: 32'sb00000000000000000000000000000001 
+ERROR: [Synth 8-285] failed synthesizing module 'axi_ad9680' [D:/adi/ad9234_1/library/axi_ad9680/axi_ad9680.v:38]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 442.164 ; gain = 150.113
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  9 11:28:03 2018...

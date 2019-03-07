@@ -1,0 +1,916 @@
+!SESSION 2018-10-08 17:31:06.281 -----------------------------------------------
+eclipse.buildId=2017.4
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk
+
+This is a continuation of log file D:\adi_9234\ad9234-6-Laser\daq2_zcu102.sdk\.metadata\.bak_0.log
+Created Time: 2018-10-09 21:03:45.698
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.699
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.699
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.706
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.707
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.726
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.727
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.734
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.735
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.757
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.758
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.765
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.766
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.785
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:45.786
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss ], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.864
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss ], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.864
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.869
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.869
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.910
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Result: [null, {"psu_cortexa53_0": {"archiver": {"category": "",
+"value": "aarch64-none-elf-ar",
+"default": "aarch64-none-elf-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "aarch64-none-elf-gcc",
+"default": "aarch64-none-elf-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"exec_mode": {"category": "",
+"value": "aarch64",
+"default": "aarch64",
+"type": "enum",
+"desc": "Execution mode of the processor - aarch32 vs aarch64",
+"permit": "",
+"options": {"AARCH32": "aarch32",
+"AARCH64": "aarch64",
+},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -Wall -Wextra",
+"default": "-g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "psu_uart_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "psu_coresight_0 psu_uart_0 psu_uart_1",
+},
+"stdout": {"category": "",
+"value": "psu_uart_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "psu_coresight_0 psu_uart_0 psu_uart_1",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.910
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.918
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.919
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.938
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.938
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.945
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.946
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.966
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.966
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.968
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.969
+!MESSAGE XSCT Command: [version], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.970
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.970
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.977
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:54.978
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.000
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.000
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.022
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level == 0}], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.023
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.025
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.025
+!MESSAGE XSCT Command: [source C:/Xilinx/SDK/2017.4/scripts/sdk/util/zynqmp_utils.tcl], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.028
+!MESSAGE XSCT command with result: [source C:/Xilinx/SDK/2017.4/scripts/sdk/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.029
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.074
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:55.075
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:56.015
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:56.015
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.022
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.022
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.057
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.058
+!MESSAGE XSCT Command: [reset_apu], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.249
+!MESSAGE XSCT command with result: [reset_apu], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.250
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.275
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.275
+!MESSAGE XSCT Command: [clear_rpu_reset], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.457
+!MESSAGE XSCT command with result: [clear_rpu_reset], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.471
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.526
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.527
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.545
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.545
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.567
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:03:59.568
+!MESSAGE XSCT Command: [fpga -file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:14.969
+!MESSAGE XSCT command with result: [fpga -file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.001
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.035
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.036
+!MESSAGE XSCT Command: [loadhw -hw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.399
+!MESSAGE XSCT command with result: [loadhw -hw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Result: [null, system_top_7]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.400
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.402
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.403
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.428
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.429
+!MESSAGE XSCT Command: [source D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/psu_init.tcl], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.437
+!MESSAGE XSCT command with result: [source D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/psu_init.tcl], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:15.438
+!MESSAGE XSCT Command: [psu_init], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:17.813
+!MESSAGE XSCT command with result: [psu_init], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:17.813
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:18.816
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:18.818
+!MESSAGE XSCT Command: [psu_ps_pl_isolation_removal], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:18.865
+!MESSAGE XSCT command with result: [psu_ps_pl_isolation_removal], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:18.867
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.871
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.872
+!MESSAGE XSCT Command: [psu_ps_pl_reset_config], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.908
+!MESSAGE XSCT command with result: [psu_ps_pl_reset_config], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.908
+!MESSAGE XSCT Command: [catch {psu_protection}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.954
+!MESSAGE XSCT command with result: [catch {psu_protection}], Result: [null, 0]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.954
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.983
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:19.984
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.020
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.020
+!MESSAGE XSCT Command: [dow D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680/Debug/ad9680.elf], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.650
+!MESSAGE XSCT command with result: [dow D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680/Debug/ad9680.elf], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.651
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.653
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.708
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.749
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.750
+!MESSAGE XSCT Command: [con], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:04:20.796
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:17.577
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-918
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:17.718
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-918
+
+!ENTRY com.xilinx.sdk.utils 1 0 2018-10-09 21:05:18.728
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.729
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.735
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.736
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.753
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.753
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.761
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.761
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.785
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.786
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.794
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.794
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.818
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.818
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.827
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.827
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.852
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.852
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.861
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.861
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.886
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.886
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.895
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.895
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.918
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:18.919
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss ], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.071
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss ], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.071
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.075
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Result: [null, {"procname": "psu_cortexa53_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.076
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.116
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680_bsp/system.mss], Result: [null, {"psu_cortexa53_0": {"archiver": {"category": "",
+"value": "aarch64-none-elf-ar",
+"default": "aarch64-none-elf-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "aarch64-none-elf-gcc",
+"default": "aarch64-none-elf-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"exec_mode": {"category": "",
+"value": "aarch64",
+"default": "aarch64",
+"type": "enum",
+"desc": "Execution mode of the processor - aarch32 vs aarch64",
+"permit": "",
+"options": {"AARCH32": "aarch32",
+"AARCH64": "aarch64",
+},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-g -Wall -Wextra",
+"default": "-g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "psu_uart_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "psu_coresight_0 psu_uart_0 psu_uart_1",
+},
+"stdout": {"category": "",
+"value": "psu_uart_0",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "psu_coresight_0 psu_uart_0 psu_uart_1",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.117
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.124
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.125
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.144
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.145
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.154
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.155
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.174
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.175
+!MESSAGE XSCT Command: [version -server], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.177
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.177
+!MESSAGE XSCT Command: [version], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.179
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.180
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.187
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.187
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.207
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.207
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level == 0}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.229
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level == 0}], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.229
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.232
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.232
+!MESSAGE XSCT Command: [source C:/Xilinx/SDK/2017.4/scripts/sdk/util/zynqmp_utils.tcl], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.235
+!MESSAGE XSCT command with result: [source C:/Xilinx/SDK/2017.4/scripts/sdk/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.236
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.279
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:28.280
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:29.016
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:29.017
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.034
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.035
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.066
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.067
+!MESSAGE XSCT Command: [reset_apu], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.245
+!MESSAGE XSCT command with result: [reset_apu], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.246
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.271
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.271
+!MESSAGE XSCT Command: [clear_rpu_reset], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.444
+!MESSAGE XSCT command with result: [clear_rpu_reset], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.463
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.531
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2NC 210308A465EC]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.531
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.550
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==1}], Result: [null,      2  xczu9 (idcode 24738093 irlen 12 fpga)
+     5  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.551
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.576
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:32.577
+!MESSAGE XSCT Command: [fpga -file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:47.995
+!MESSAGE XSCT command with result: [fpga -file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.025
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.059
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.059
+!MESSAGE XSCT Command: [loadhw -hw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.419
+!MESSAGE XSCT command with result: [loadhw -hw D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]], Result: [null, system_top_8]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.420
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.422
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.422
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.450
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.451
+!MESSAGE XSCT Command: [source D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/psu_init.tcl], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.459
+!MESSAGE XSCT command with result: [source D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top_hw_platform_0/psu_init.tcl], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:48.459
+!MESSAGE XSCT Command: [psu_init], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:51.116
+!MESSAGE XSCT command with result: [psu_init], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:51.117
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:52.118
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:52.119
+!MESSAGE XSCT Command: [psu_ps_pl_isolation_removal], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:52.147
+!MESSAGE XSCT command with result: [psu_ps_pl_isolation_removal], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:52.148
+!MESSAGE XSCT Command: [after 1000], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.151
+!MESSAGE XSCT command with result: [after 1000], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.151
+!MESSAGE XSCT Command: [psu_ps_pl_reset_config], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.183
+!MESSAGE XSCT command with result: [psu_ps_pl_reset_config], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.184
+!MESSAGE XSCT Command: [catch {psu_protection}], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.255
+!MESSAGE XSCT command with result: [catch {psu_protection}], Result: [null, 0]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.255
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.284
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.284
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.327
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.328
+!MESSAGE XSCT Command: [dow D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680/Debug/ad9680.elf], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.986
+!MESSAGE XSCT command with result: [dow D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/ad9680/Debug/ad9680.elf], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.987
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:53.989
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:54.030
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:54.070
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A465EC"} -index 1], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:54.071
+!MESSAGE XSCT Command: [con], Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-09 21:05:54.110
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-93
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-10 20:02:28.348
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-989
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-10 20:02:28.417
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [{Format=channel "tcfchan#4" closed, Time=1539172948411, Code=1}, ]. Thread: Thread-989
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-10 20:02:28.424
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-992
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-10 20:02:28.439
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-994
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-10 20:02:28.441
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [{Format=channel "tcfchan#5" closed, Time=1539172948429, Code=1}, ]. Thread: Thread-992
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-10-10 20:02:28.487
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-994

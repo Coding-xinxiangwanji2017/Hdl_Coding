@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul 26 13:00:10 2018
+# Process ID: 1968
+# Current directory: D:/adi/hdl/library/axi_ad9122
+# Command line: vivado.exe -mode batch -source axi_ad9122_ip.tcl
+# Log file: D:/adi/hdl/library/axi_ad9122/vivado.log
+# Journal file: D:/adi/hdl/library/axi_ad9122\vivado.jou
+#-----------------------------------------------------------
+source axi_ad9122_ip.tcl

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Aug  4 17:59:24 2018
+# Process ID: 10328
+# Current directory: D:/adi/ad9234/library/jesd204/axi_jesd204_rx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15284 D:\adi\ad9234\library\jesd204\axi_jesd204_rx\axi_jesd204_rx.xpr
+# Log file: D:/adi/ad9234/library/jesd204/axi_jesd204_rx/vivado.log
+# Journal file: D:/adi/ad9234/library/jesd204/axi_jesd204_rx\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/adi/ad9234/library/jesd204/axi_jesd204_rx/axi_jesd204_rx.xpr
+update_compile_order -fileset sources_1

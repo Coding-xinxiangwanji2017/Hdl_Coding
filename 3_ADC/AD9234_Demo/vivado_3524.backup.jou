@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Sep 28 20:36:03 2018
+# Process ID: 3524
+# Current directory: D:/adi_9234/ad9234-6-Laser
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7324 D:\adi_9234\ad9234-6-Laser\daq2_zcu102.xpr
+# Log file: D:/adi_9234/ad9234-6-Laser/vivado.log
+# Journal file: D:/adi_9234/ad9234-6-Laser\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/adi_9234/ad9234-6-Laser/daq2_zcu102.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top.hdf
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210308A465EC]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210308A465EC]
+open_hw_target
+set_property PROGRAM.FILE {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/system_top.bit} [get_hw_devices xczu9_0]
+set_property PROBES.FILE {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/system_top.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/system_top.ltx} [get_hw_devices xczu9_0]
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+open_bd_design {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd}
+open_bd_design {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {format_9234_timestamp_0_out_1 }]
+disconnect_hw_server localhost:3121
+open_bd_design {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd}

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct 11 11:33:51 2018
+# Process ID: 6876
+# Current directory: D:/adi_9234/ad9234-6-Laser
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12592 D:\adi_9234\ad9234-6-Laser\daq2_zcu102.xpr
+# Log file: D:/adi_9234/ad9234-6-Laser/vivado.log
+# Journal file: D:/adi_9234/ad9234-6-Laser\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/adi_9234/ad9234-6-Laser/daq2_zcu102.xpr
+open_bd_design {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1

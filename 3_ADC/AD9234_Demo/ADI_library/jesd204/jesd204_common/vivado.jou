@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 17 10:45:42 2018
+# Process ID: 3520
+# Current directory: D:/adi/hdl/library/jesd204/jesd204_common
+# Command line: vivado.exe -mode batch -source jesd204_common_ip.tcl
+# Log file: D:/adi/hdl/library/jesd204/jesd204_common/vivado.log
+# Journal file: D:/adi/hdl/library/jesd204/jesd204_common\vivado.jou
+#-----------------------------------------------------------
+source jesd204_common_ip.tcl

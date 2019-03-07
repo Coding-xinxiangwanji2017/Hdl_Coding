@@ -1,0 +1,367 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Sep 28 16:11:12 2018
+# Process ID: 12344
+# Current directory: D:/adi_9234/ad9234-6-Laser
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12764 D:\adi_9234\ad9234-6-Laser\daq2_zcu102.xpr
+# Log file: D:/adi_9234/ad9234-6-Laser/vivado.log
+# Journal file: D:/adi_9234/ad9234-6-Laser\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/adi_9234/ad9234-6-Laser/daq2_zcu102.xpr
+INFO: [Project 1-313] Project file moved from 'D:/adi_9234/ad9234-5-SPI04610' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi/ad9234_1/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi_9234/waveform'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi_9234/waveform-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1159.348 ; gain = 452.027
+update_compile_order -fileset sources_1
+open_bd_design {D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:zynq_ultra_ps_e:3.1 - sys_ps8
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - spi0_csn_concat
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi0_ss_i_n_VCC
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi0_sclk_i_GND
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi0_s_i_GND
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - spi1_csn_concat
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi1_ss_i_n_VCC
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi1_sclk_i_GND
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi1_s_i_GND
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc_1
+Adding cell -- analog.com:user:util_adcfifo:1.0 - axi_ad9680_fifo
+Adding cell -- analog.com:user:axi_adxcvr:1.0 - axi_ad9680_xcvr
+Adding cell -- analog.com:user:axi_ad9680:1.0 - axi_ad9680_core
+Adding cell -- analog.com:user:util_cpack:1.0 - axi_ad9680_cpack
+Adding cell -- analog.com:user:axi_dmac:1.0 - axi_ad9680_dma
+Adding cell -- analog.com:user:util_adxcvr:1.0 - util_daq2_xcvr
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - axi_ad9680_jesd_rstgen
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:start_LD:1.0 - start_LD_0
+Adding cell -- zvision:user:format_9234_timestamp:1.0 - format_9234_timestamp_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - sys_ps8_emio_spi1_ss_i_n_VCC1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /util_daq2_xcvr/rx_out_clk_0(clk) and /format_9234_timestamp_0/clk_2x(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /format_9234_timestamp_0/o_ps_irq(intr) and /ila_0/probe5(undef)
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- analog.com:user:axi_jesd204_rx:1.0 - rx_axi
+Adding cell -- analog.com:user:jesd204_rx:1.0 - rx
+Successfully read diagram <system> from BD file <D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1159.348 ; gain = 0.000
+startgroup
+set_property -dict [list CONFIG.HIGH_PERIOD {0x00000007} CONFIG.TOTAL_PERIOD {0x0003D090}] [get_bd_cells start_LD_0]
+endgroup
+save_bd_design
+Wrote  : <D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd> 
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1159.348 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE16_WIDTH(8) on '/ila_0' with propagated value(1). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE16_WIDTH(8) on '/ila_0' with propagated value(1). Command ignored
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_fifo/adc_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_fifo/adc_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_fifo/dma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_core/rx_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_cpack/adc_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_cpack/adc_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/up_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /start_LD_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /format_9234_timestamp_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+Wrote  : <D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi0_csn_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi0_ss_i_n_VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi0_sclk_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi0_s_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi1_csn_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_ss_i_n_VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_sclk_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_s_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_cpack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_daq2_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_jesd_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_jesd/rx_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_jesd/rx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block start_LD_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block format_9234_timestamp_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_ss_i_n_VCC1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp3_interconnect/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp3_interconnect/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+Exporting to file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/synth/system.hwdef
+[Fri Sep 28 16:47:37 2018] Launched synth_1...
+Run output will be captured here: D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/synth_1/runme.log
+[Fri Sep 28 16:47:37 2018] Launched impl_1...
+Run output will be captured here: D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1209.375 ; gain = 50.027
+file copy -force D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/system_top.sysdef D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top.hdf
+
+launch_sdk -workspace D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk -hwspec D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_module_reference system_start_LD_0_0
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst_n' as interface 'rst_n'.
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi/ad9234_1/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi_9234/waveform'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/adi_9234/waveform-2'.
+Upgrading 'D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_start_LD_0_0 from start_LD_v1_0 1.0 to start_LD_v1_0 1.0
+Wrote  : <D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1224.340 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE16_WIDTH(8) on '/ila_0' with propagated value(1). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_PROBE16_WIDTH(8) on '/ila_0' with propagated value(1). Command ignored
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_cpu_interconnect/s00_couplers/auto_pc/S_AXI(0) and /sys_ps8/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP3_FPD(1) and /axi_hp3_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /sys_ps8/S_AXI_HP2_FPD(1) and /axi_hp2_interconnect/s00_couplers/auto_us/M_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_fifo/adc_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_fifo/adc_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_fifo/dma_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_xcvr/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_core/rx_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_core/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_cpack/adc_rst have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_HIGH 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_cpack/adc_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/up_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_out_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_0 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_1 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_2 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/rx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /util_daq2_xcvr/tx_clk_3 have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_tx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /format_9234_timestamp_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_jesd/rx_axi/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_sys_ps8_0_pl_clk0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_jesd/rx_axi/core_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+WARNING: [BD 41-927] Following properties on pin /axi_ad9680_jesd/rx/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_util_daq2_xcvr_0_rx_out_clk_0 
+Wrote  : <D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi0_csn_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi0_ss_i_n_VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi0_sclk_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi0_s_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block spi1_csn_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_ss_i_n_VCC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_sclk_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_s_i_GND .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_concat_intc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_core .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_cpack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_dma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_daq2_xcvr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_jesd_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_jesd/rx_axi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ad9680_jesd/rx .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block start_LD_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block format_9234_timestamp_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_ps8_emio_spi1_ss_i_n_VCC1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp2_interconnect/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp3_interconnect/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hp3_interconnect/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+Exporting to file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/adi_9234/ad9234-6-Laser/daq2_zcu102.srcs/sources_1/bd/system/synth/system.hwdef
+[Fri Sep 28 17:57:19 2018] Launched synth_1...
+Run output will be captured here: D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/synth_1/runme.log
+[Fri Sep 28 17:57:19 2018] Launched impl_1...
+Run output will be captured here: D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1276.301 ; gain = 51.961
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210308A465EC]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210308A465EC]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210308A465EC]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210308A465EC]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+current_hw_device [get_hw_devices xczu9_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu9_0] 0]
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu9_0]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 1886.508 ; gain = 0.000
+INFO: [Labtools 27-1434] Device xczu9 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Common 17-48] File not found: D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/system_top.ltx
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308A465EC
+INFO: [Labtools 27-1435] Device xczu9 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210308A465EC
+file copy -force D:/adi_9234/ad9234-6-Laser/daq2_zcu102.runs/impl_1/system_top.sysdef D:/adi_9234/ad9234-6-Laser/daq2_zcu102.sdk/system_top.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 28 19:16:27 2018...

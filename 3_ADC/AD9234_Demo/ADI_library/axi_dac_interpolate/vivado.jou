@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul 26 13:05:13 2018
+# Process ID: 21908
+# Current directory: D:/adi/hdl/library/axi_dac_interpolate
+# Command line: vivado.exe -mode batch -source axi_dac_interpolate_ip.tcl
+# Log file: D:/adi/hdl/library/axi_dac_interpolate/vivado.log
+# Journal file: D:/adi/hdl/library/axi_dac_interpolate\vivado.jou
+#-----------------------------------------------------------
+source axi_dac_interpolate_ip.tcl
