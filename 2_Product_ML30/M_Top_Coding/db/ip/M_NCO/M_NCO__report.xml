@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2019.03.26.16:32:30"
+ outputDirectory="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="MAX 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10M40DAF256C8G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="in" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="clken" direction="input" role="clken" width="1" />
+   <port name="phi_inc_i" direction="input" role="phi_inc_i" width="32" />
+  </interface>
+  <interface name="out" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="fsin_o" direction="output" role="fsin_o" width="18" />
+   <port name="fcos_o" direction="output" role="fcos_o" width="18" />
+   <port name="out_valid" direction="output" role="out_valid" width="1" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="M_NCO:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M40DAF256C8G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1553589148,AUTO_UNIQUE_ID=(altera_nco_ii:17.1:apr=32,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=1.0,fsamp=40.0,hyper_opt=false,hyper_opt_select=false,mpr=18,numba=1,numch=1,phi_inc=107374182,pmod_pipe=1,real_freq_out=1.0,selected_device_family=MAX 10,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=dual_output)"
+   instancePathKey="M_NCO"
+   kind="M_NCO"
+   version="1.0"
+   name="M_NCO">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1553589148" />
+  <parameter name="AUTO_DEVICE" value="10M40DAF256C8G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/M_NCO.vhd"
+       type="VHDL" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cordic_axor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/dop_reg.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_seg_sel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_dxx_g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_init.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_2c.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altqmcpipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_nco_isdr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_fs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cordic_zxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_crd_par.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cordic_sxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/M_NCO_nco_ii_0.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altq.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altqmcash.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altqmcpipe.ocp"
+       type="OTHER"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/ip/M_NCO.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="D:/my_tool/intel_fpga/ip/altera/dsp/altera_nco_ii/altera_nco_ii_hw.tcl" />
+   <file
+       path="D:/My_Tool/Intel_FPGA/ip/altera/dsp/altera_nco_ii/nco_helper.jar" />
+   <file
+       path="D:/My_Tool/Intel_FPGA/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="M_NCO">queue size: 0 starting:M_NCO "M_NCO"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="M_NCO"><![CDATA["<b>M_NCO</b>" reuses <b>altera_nco_ii</b> "<b>submodules/M_NCO_nco_ii_0</b>"]]></message>
+   <message level="Debug" culprit="M_NCO">queue size: 0 starting:altera_nco_ii "submodules/M_NCO_nco_ii_0"</message>
+   <message level="Info" culprit="nco_ii_0"><![CDATA["<b>M_NCO</b>" instantiated <b>altera_nco_ii</b> "<b>nco_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_nco_ii:17.1:apr=32,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=1.0,fsamp=40.0,hyper_opt=false,hyper_opt_select=false,mpr=18,numba=1,numch=1,phi_inc=107374182,pmod_pipe=1,real_freq_out=1.0,selected_device_family=MAX 10,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=dual_output"
+   instancePathKey="M_NCO:.:nco_ii_0"
+   kind="altera_nco_ii"
+   version="17.1"
+   name="M_NCO_nco_ii_0">
+  <parameter name="aprp" value="16" />
+  <parameter name="numba" value="1" />
+  <parameter name="cordic_arch" value="parallel" />
+  <parameter name="pmod_pipe" value="1" />
+  <parameter name="fsamp" value="40.0" />
+  <parameter name="cycles_per_output" value="1" />
+  <parameter name="selected_device_family" value="MAX 10" />
+  <parameter name="apri" value="16" />
+  <parameter name="aprf" value="32" />
+  <parameter name="want_dither" value="true" />
+  <parameter name="hyper_opt_select" value="false" />
+  <parameter name="want_phase_mod" value="false" />
+  <parameter name="apr" value="32" />
+  <parameter name="hyper_opt" value="false" />
+  <parameter name="trig_cycles_per_output" value="1" />
+  <parameter name="dpri" value="4" />
+  <parameter name="mpr" value="18" />
+  <parameter name="design_env" value="NATIVE" />
+  <parameter name="numch" value="1" />
+  <parameter name="want_freq_mod" value="false" />
+  <parameter name="use_dedicated_multipliers" value="true" />
+  <parameter name="want_sin_and_cos" value="dual_output" />
+  <parameter name="phi_inc" value="107374182" />
+  <parameter name="fmod_pipe" value="1" />
+  <parameter name="arch" value="cordic" />
+  <parameter name="freq_out" value="1.0" />
+  <parameter name="real_freq_out" value="1.0" />
+  <generatedFiles>
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cordic_axor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/dop_reg.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_seg_sel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_dxx_g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_init.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_2c.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altqmcpipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_nco_isdr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cord_fs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cordic_zxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_crd_par.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/cordic_sxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/M_NCO_nco_ii_0.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altq.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altqmcash.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_B0/1_Product/BA0/M_Top_0325_3rd_Echo/db/ip/M_NCO/submodules/asj_altqmcpipe.ocp"
+       type="OTHER"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="D:/my_tool/intel_fpga/ip/altera/dsp/altera_nco_ii/altera_nco_ii_hw.tcl" />
+   <file
+       path="D:/My_Tool/Intel_FPGA/ip/altera/dsp/altera_nco_ii/nco_helper.jar" />
+   <file
+       path="D:/My_Tool/Intel_FPGA/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="M_NCO" as="nco_ii_0" />
+  <messages>
+   <message level="Debug" culprit="M_NCO">queue size: 0 starting:altera_nco_ii "submodules/M_NCO_nco_ii_0"</message>
+   <message level="Info" culprit="nco_ii_0"><![CDATA["<b>M_NCO</b>" instantiated <b>altera_nco_ii</b> "<b>nco_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

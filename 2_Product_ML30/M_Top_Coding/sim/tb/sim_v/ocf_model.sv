@@ -1,0 +1,87 @@
+////////////////////////////////////////////////////////////////////////////////    
+//                 
+//      ******** *           * *****           ***** *****   ***   ** 
+//             *  *         *    *            *        *    *   *  * *    
+//            *    *       *     *           *         *   *     * *  *   
+//           *      *     *      *          *          *   *     * *   *   *
+//         *         *   *       *         *           *   *     *      *  *
+//       *            * *        *        *            *    *   *        * * 
+//      ********       *       ***** *****           *****   ***          **
+//
+////////////////////////////////////////////////////////////////////////////////
+
+`timescale 1ns/1ps
+
+
+module ocf_model(
+    
+    input		      clock                   , //    clk.clk
+    input		      avmm_csr_addr           , //    csr.address
+    input		      avmm_csr_read           , //       .read
+    input	 [31:0]	avmm_csr_writedata      , //       .writedata
+    input		      avmm_csr_write          , //       .write
+    output reg [31:0]	avmm_csr_readdata       , //       .readdata
+    
+    input	 [17:0]	avmm_data_addr          , //   data.address
+    input		      avmm_data_read          , //       .read
+    input	 [31:0] avmm_data_writedata     , //       .writedata
+    input		      avmm_data_write         , //       .write
+    output reg [31:0] avmm_data_readdata      , //       .readdata
+    output            avmm_data_waitrequest   , //       .waitrequest
+    output reg        avmm_data_readdatavalid , //       .readdatavalid
+    input	 [3:0]  avmm_data_burstcount    , //       .burstcount
+    input		      reset_n                   // nreset.reset_n
+
+    );
+    
+    reg [31:0]  flash_mem [0 : 18'h3ffff];
+    reg [3:0]  rd_cnt;
+    reg [15:0] rd_268and26a_data_cnt;
+    
+    reg [3:0]  rd_num;
+    reg [17:0] rd_addr;
+    reg [17:0] dummy_data;
+    integer i;
+    assign avmm_data_waitrequest = 0;
+    initial begin
+      dummy_data = 0;
+      for(i= 0; i<50000 ; i=i+1) begin
+          flash_mem [dummy_data] = {dummy_data[15:0],dummy_data[15:0]};
+          dummy_data = dummy_data + 1;
+      end 
+    end
+    
+    always @(posedge clock) begin
+        if(avmm_csr_read == 1) 
+            avmm_csr_readdata <= 32'h18;
+        else
+            avmm_csr_readdata <= 32'h18;
+    end
+    always @(posedge clock) begin
+        if(avmm_data_write == 1) 
+            flash_mem[avmm_data_addr] <= avmm_data_writedata;
+    end
+    
+    always @(posedge clock) begin
+        if(avmm_data_read == 1) begin 
+            rd_addr <= avmm_data_addr;
+            rd_num  <= avmm_data_burstcount;
+            rd_cnt  <= 0;
+        end 
+        else if(rd_cnt < rd_num) begin
+            rd_addr <= rd_addr + 1;
+            rd_cnt <= rd_cnt + 1;
+            avmm_data_readdata <= flash_mem[rd_addr];
+            avmm_data_readdatavalid <= 1;
+        end
+        else begin
+            rd_addr <= rd_addr;
+            rd_cnt <= rd_cnt;
+            avmm_data_readdata <= 0;
+            avmm_data_readdatavalid <= 0;
+        end
+    end
+    
+    
+    
+endmodule

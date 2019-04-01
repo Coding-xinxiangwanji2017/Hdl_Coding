@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element M_NCO_inst
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element M_NCO_inst_clk_bfm
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element M_NCO_inst_in_bfm
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element M_NCO_inst_out_bfm
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element M_NCO_inst_rst_bfm
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M40DAF256C8G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="8" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="M_NCO" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="true" />
+ <instanceScript></instanceScript>
+ <module name="M_NCO_inst" kind="M_NCO" version="1.0" enabled="1">
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DEVICE" value="10M40DAF256C8G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_UNIQUE_ID" value="M_NCO" />
+ </module>
+ <module
+   name="M_NCO_inst_clk_bfm"
+   kind="altera_avalon_clock_source"
+   version="17.1"
+   enabled="1">
+  <parameter name="CLOCK_RATE" value="50000000" />
+  <parameter name="CLOCK_UNIT" value="1" />
+ </module>
+ <module
+   name="M_NCO_inst_in_bfm"
+   kind="altera_conduit_bfm"
+   version="17.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="true" />
+  <parameter name="ENABLE_RESET" value="true" />
+  <parameter name="SIGNAL_DIRECTIONS" value="output,output" />
+  <parameter name="SIGNAL_ROLES" value="clken,phi_inc_i" />
+  <parameter name="SIGNAL_WIDTHS" value="1,32" />
+ </module>
+ <module
+   name="M_NCO_inst_out_bfm"
+   kind="altera_conduit_bfm"
+   version="17.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="true" />
+  <parameter name="ENABLE_RESET" value="true" />
+  <parameter name="SIGNAL_DIRECTIONS" value="input,input" />
+  <parameter name="SIGNAL_ROLES" value="fsin_o,out_valid" />
+  <parameter name="SIGNAL_WIDTHS" value="18,1" />
+ </module>
+ <module
+   name="M_NCO_inst_rst_bfm"
+   kind="altera_avalon_reset_source"
+   version="17.1"
+   enabled="1">
+  <parameter name="ASSERT_HIGH_RESET" value="0" />
+  <parameter name="INITIAL_RESET_CYCLES" value="50" />
+ </module>
+ <connection
+   kind="clock"
+   version="17.1"
+   start="M_NCO_inst_clk_bfm.clk"
+   end="M_NCO_inst.clk" />
+ <connection
+   kind="clock"
+   version="17.1"
+   start="M_NCO_inst_clk_bfm.clk"
+   end="M_NCO_inst_rst_bfm.clk" />
+ <connection
+   kind="clock"
+   version="17.1"
+   start="M_NCO_inst_clk_bfm.clk"
+   end="M_NCO_inst_in_bfm.clk" />
+ <connection
+   kind="clock"
+   version="17.1"
+   start="M_NCO_inst_clk_bfm.clk"
+   end="M_NCO_inst_out_bfm.clk" />
+ <connection
+   kind="conduit"
+   version="17.1"
+   start="M_NCO_inst_in_bfm.conduit"
+   end="M_NCO_inst.in">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="17.1"
+   start="M_NCO_inst_out_bfm.conduit"
+   end="M_NCO_inst.out">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="17.1"
+   start="M_NCO_inst_rst_bfm.reset"
+   end="M_NCO_inst_in_bfm.reset" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="M_NCO_inst_rst_bfm.reset"
+   end="M_NCO_inst_out_bfm.reset" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="M_NCO_inst_rst_bfm.reset"
+   end="M_NCO_inst.rst" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

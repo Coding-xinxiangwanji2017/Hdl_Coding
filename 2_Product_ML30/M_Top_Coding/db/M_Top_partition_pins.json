@@ -1,0 +1,425 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "F_CapTrig",
+					"strict" : false
+				},
+				{
+					"name" : "F_START1",
+					"strict" : false
+				},
+				{
+					"name" : "F_START2",
+					"strict" : false
+				},
+				{
+					"name" : "F_START3",
+					"strict" : false
+				},
+				{
+					"name" : "F_GAINRST",
+					"strict" : false
+				},
+				{
+					"name" : "F_RPI",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "F_DWR",
+					"strict" : false
+				},
+				{
+					"name" : "F_DCSAB",
+					"strict" : false
+				},
+				{
+					"name" : "F_DCS1",
+					"strict" : false
+				},
+				{
+					"name" : "F_DCSC",
+					"strict" : false
+				},
+				{
+					"name" : "F_DCS2",
+					"strict" : false
+				},
+				{
+					"name" : "F_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "F_CNV",
+					"strict" : false
+				},
+				{
+					"name" : "F_SCK_1",
+					"strict" : false
+				},
+				{
+					"name" : "F_DISABLE_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_REFCLK_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_RSTIDX_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SSN",
+					"strict" : false
+				},
+				{
+					"name" : "F_SCK",
+					"strict" : false
+				},
+				{
+					"name" : "F_MOSI",
+					"strict" : false
+				},
+				{
+					"name" : "F_SHDN",
+					"strict" : false
+				},
+				{
+					"name" : "F_REFCLK_1P",
+					"strict" : false
+				},
+				{
+					"name" : "F_RSTIDX_1P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SSN_1",
+					"strict" : false
+				},
+				{
+					"name" : "F_SCK_T",
+					"strict" : false
+				},
+				{
+					"name" : "F_MOSI_1",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[8]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CpSv_Addr_o[10]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_WRN",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_OEN",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_CSN",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_RSTN",
+					"strict" : false
+				},
+				{
+					"name" : "F_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[0]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[1]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[4]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[5]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[6]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[7]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[8]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[9]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[10]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[11]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[12]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[13]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[14]",
+					"strict" : false
+				},
+				{
+					"name" : "F_ETH_D[15]",
+					"strict" : false
+				},
+				{
+					"name" : "F_FRAME1_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_FRAME3_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_FRAME5_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_FRAME6_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_FRAME7_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_FRAME8_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD1_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD3_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD5_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD6_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD7_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD8_P",
+					"strict" : false
+				},
+				{
+					"name" : "LVRESETN",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_40MHz_IN",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD1_1",
+					"strict" : false
+				},
+				{
+					"name" : "F_LCLK_OUT_1P",
+					"strict" : false
+				},
+				{
+					"name" : "F_LCLK_OUT_P",
+					"strict" : false
+				},
+				{
+					"name" : "F_PPS",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD0_1",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD3_1",
+					"strict" : false
+				},
+				{
+					"name" : "F_SD2_1",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

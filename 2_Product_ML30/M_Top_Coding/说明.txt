@@ -1,0 +1,3 @@
+1、20190321
+将M_VolApd模块中的bug纠正过来：原错误dpram_apd_vol与dpram_cap_apd_vol  IP输入的信号完全一致
+                                                      改正后：将dpram_cap_apd_vol IP的输入信号改成与之相对应的信号

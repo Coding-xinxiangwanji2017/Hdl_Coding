@@ -1,0 +1,21 @@
+# system info on_chip_flash on 2019.02.25.20:15:20
+system_info:
+name,value
+DEVICE,10M40DAF256C8G
+DEVICE_FAMILY,MAX 10
+GENERATION_ID,1551096919
+#
+#
+# Files generated for on_chip_flash on 2019.02.25.20:15:20
+files:
+filepath,kind,attributes,module,is_top
+simulation/on_chip_flash.vhd,VHDL,,on_chip_flash,true
+simulation/submodules/altera_onchip_flash_util.v,VERILOG,,altera_onchip_flash,false
+simulation/submodules/altera_onchip_flash.v,VERILOG,,altera_onchip_flash,false
+simulation/submodules/altera_onchip_flash_avmm_data_controller.v,VERILOG,,altera_onchip_flash,false
+simulation/submodules/altera_onchip_flash_avmm_csr_controller.v,VERILOG,,altera_onchip_flash,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+on_chip_flash.onchip_flash_0,altera_onchip_flash

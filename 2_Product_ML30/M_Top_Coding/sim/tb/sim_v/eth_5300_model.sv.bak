@@ -1,0 +1,301 @@
+////////////////////////////////////////////////////////////////////////////////    
+//                 
+//      ******** *           * *****           ***** *****   ***   ** 
+//             *  *         *    *            *        *    *   *  * *    
+//            *    *       *     *           *         *   *     * *  *   
+//           *      *     *      *          *          *   *     * *   *   *
+//         *         *   *       *         *           *   *     *      *  *
+//       *            * *        *        *            *    *   *        * * 
+//      ********       *       ***** *****           *****   ***          **
+//
+////////////////////////////////////////////////////////////////////////////////
+
+`timescale 1ns/1ps
+
+
+module eth_5300_model(
+        ////////////////////////////////
+        // Clock & Reset
+        ////////////////////////////////
+    input     rst_n   ,           //Reset_activelow
+    input     CLK_40MHz_IN,           //40MHz
+        
+    inout     [15:0] F_ETH_D                        ,
+    input     [9:1]  F_ETH_A                        ,
+    input            F_ETH_WRN                      ,
+    input            F_ETH_RDN                      ,
+    input            F_ETH_CSN                      ,
+    input            F_ETH_RSTN                     ,
+    output           F_ETH_INT                      
+    );
+    
+    wire [9:0]  rw_addr ;
+    reg  [15:0] rd_data ;
+    reg  [15:0] ETH_RD_D ;    
+    reg         rd_en   ;
+    reg         out_en;
+    reg  [15:0] rd_data_cnt;
+    reg  [15:0] rd_268and26a_data_cnt;
+    
+    
+    reg fst_read_26a;
+    
+    
+    assign   rw_addr = {F_ETH_A,1'b0};
+    
+    initial
+      begin
+        rd_268and26a_data_cnt = 0;
+          forever @(negedge F_ETH_CSN)
+            if(rw_addr == 10'h260) begin
+              rd_268and26a_data_cnt = rd_268and26a_data_cnt + 1;
+            end 
+            
+      end
+      
+      
+     initial
+      begin
+        fst_read_26a = 1; 
+          forever @(negedge F_ETH_CSN)
+            
+            if(rw_addr == 10'h260) 
+              fst_read_26a = 1;
+            else if(rw_addr == 10'h270)
+              fst_read_26a = 0;      
+      end
+     
+     
+     initial
+      begin
+        rd_data_cnt = 0;
+          forever @(negedge F_ETH_CSN)
+            
+            if(rw_addr == 10'h260)
+              rd_data_cnt = 0;
+            else if(rw_addr == 10'h270)
+              rd_data_cnt = rd_data_cnt + 1;
+
+
+      end
+      
+      
+    initial
+      begin
+        out_en = 0;
+          forever begin
+
+            wait (F_ETH_RDN == 0  && F_ETH_CSN == 0);
+            # 50;
+            
+
+              
+            
+            out_en  = 1;
+            ETH_RD_D = rd_data;
+            wait (F_ETH_CSN == 1);
+            #10;
+            out_en = 0;
+            
+            
+
+          end      
+      
+      end 
+      
+    assign  F_ETH_D = (out_en == 1) ? ETH_RD_D : 16'hzzzz; 
+      
+    always @( * )
+     case(rw_addr)
+         10'h208 : rd_data = 16'h0022;
+         10'h248 : rd_data = 16'h0017;
+         10'h26a : if(fst_read_26a == 1)
+                       case(rd_268and26a_data_cnt) 
+                        16'h0   : rd_data = 16'h0006;
+                        16'h1   : rd_data = 16'h0006;
+                        16'h2   : rd_data = 16'h0006;
+                        16'h3   : rd_data = 16'h0006;
+                        16'h4   : rd_data = 16'h0006;
+                        16'h5   : rd_data = 16'h0016;
+                        16'h6   : rd_data = 16'h0006;
+                        16'h7   : rd_data = 16'h0006;
+                        16'h8   : rd_data = 16'h0006;//train cmd1
+                        16'h9   : rd_data = 16'h0006;//train cmd2
+                        16'ha   : rd_data = 16'h0006;//train cmd3
+                        16'hb   : rd_data = 16'h0006;//train cmd4
+                        16'hc   : rd_data = 16'h0006;//train cmd5
+                        16'hd   : rd_data = 16'h0006;//train cmd6
+                        16'he   : rd_data = 16'h0006;//train cmd7
+                        16'hf   : rd_data = 16'h0006;//train cmd8
+                        16'h10  : rd_data = 16'h0006;//train cmd9
+                        16'h11  : rd_data = 16'h0006;//train cmda
+                        16'h12  : rd_data = 16'h0006;//train cmdb
+                        16'h13  : rd_data = 16'h0006;//train cmdc
+                        16'h14  : rd_data = 16'h0006;//train cmdd
+                        16'h15  : rd_data = 16'h0006;//train cmde
+                        16'h16  : rd_data = 16'h0006;//train cmdf
+                        16'h17  : rd_data = 16'h0006;//train cmd10
+                        default :   rd_data = 0;
+                       endcase
+                  else
+                   rd_data = 0;   
+         10'h270 : case(rd_268and26a_data_cnt) 
+                    16'h0   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'hba01;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h1   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'hba02;
+                                  16'h2   : rd_data = 16'h0100;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h2   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'hba02;
+                                  16'h2   : rd_data = 16'h0200;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h3   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'hba02;
+                                  16'h2   : rd_data = 16'h0300;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h4   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'hba02;
+                                  16'h2   : rd_data = 16'h0400;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h5   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0014;                 
+                                  16'h1   : rd_data = 16'hbb01;                 
+                                  16'h2   : rd_data = 16'h0002;                 
+                                  16'h2   : rd_data = 16'h0001;                 
+                                  16'h2   : rd_data = 16'h0002;                 
+                                  16'h2   : rd_data = 16'h0003;                 
+                                  16'h2   : rd_data = 16'h0004;                 
+                                  16'h2   : rd_data = 16'h0005;                 
+                                  16'h2   : rd_data = 16'h0006;                 
+                                  16'h2   : rd_data = 16'h0007;                 
+                                  16'h2   : rd_data = 16'h0008;                 
+                                  default :   rd_data = 0;                      
+                              endcase                                           
+                    16'h6   : case(rd_data_cnt)                                 
+                                  16'h0   : rd_data = 16'h0004;                 
+                                  16'h1   : rd_data = 16'hbc1f;                 
+                                  16'h2   : rd_data = 16'h0005;                 
+                                  default :   rd_data = 0;                      
+                              endcase                                           
+                    16'h7   : case(rd_data_cnt)                                                  
+                                  16'h0   : rd_data = 16'h0004;                                  
+                                  16'h1   : rd_data = 16'hba03;                                  
+                                  16'h2   : rd_data = 16'h0000;                                  
+                                  default :   rd_data = 0;                                       
+                              endcase                                                            
+                    16'h8   : case(rd_data_cnt)                                                  
+                                  16'h0   : rd_data = 16'h0004;                                  
+                                  16'h1   : rd_data = 16'haa11;                                  
+                                  16'h2   : rd_data = 16'h0000;                                  
+                                  default :   rd_data = 0;                                       
+                              endcase
+                    16'h9   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaf9;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'ha   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaf1;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'hb   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haafa;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'hc   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaf2;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'hd   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haafb;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'he   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaf3;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'hf   : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaf1;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h10  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haa20;
+                                  16'h2   : rd_data = 16'h0123;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h11  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaf1;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h12  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haaef;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h13  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haae1;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h14  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haa21;
+                                  16'h2   : rd_data = 16'h0456;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h15  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haa22;
+                                  16'h2   : rd_data = 16'h0789;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h16  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004;
+                                  16'h1   : rd_data = 16'haa1f;
+                                  16'h2   : rd_data = 16'h0000;
+                                  default :   rd_data = 0;
+                              endcase
+                    16'h17  : case(rd_data_cnt) 
+                                  16'h0   : rd_data = 16'h0004        ;
+                                  16'h1   : rd_data = 16'hbc1f        ;
+                                  16'h2   : rd_data = 16'h0005        ;
+                                  default :   rd_data = 0;
+                              endcase
+                    default :   rd_data = 0;
+                  endcase
+          
+         default : rd_data = 0;
+     endcase
+    
+endmodule

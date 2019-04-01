@@ -1,0 +1,277 @@
+Info: Starting: Create testbench Platform Designer system
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/M_NCO.ipx
+Info: qsys-generate E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO.qsys --testbench=STANDARD --output-directory=E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip --family="MAX 10" --part=10M40DAF256C8G
+Progress: Loading ip/M_NCO.qsys
+Progress: Reading input file
+Progress: Adding nco_ii_0 [altera_nco_ii 17.1]
+Progress: Parameterizing module nco_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching D:/my_tool/intel_fpga/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index D:\my_tool\intel_fpga\quartus\sopc_builder\bin\root_components.ipx
+Info: D:\my_tool\intel_fpga\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index D:\my_tool\intel_fpga\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: D:\my_tool\intel_fpga\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.00 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.00 seconds
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO\testbench\M_NCO.ipx
+Progress: Loading ip/M_NCO.qsys
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/* matched 54 files in 0.01 seconds
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/ip/**/* matched 0 files in 0.00 seconds
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/*/* matched 19 files in 0.00 seconds
+Info: E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO\testbench\M_NCO.ipx described 0 plugins, 3 paths, in 0.01 seconds
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/* matched 4 files in 0.01 seconds
+Info: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/*/* matched 0 files in 0.00 seconds
+Info: C:/Users/dell/.altera.quartus/ip/17.1/**/* matched 0 files in 0.00 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index D:\my_tool\intel_fpga\ip\altera\altera_components.ipx
+Info: D:\my_tool\intel_fpga\ip\altera\altera_components.ipx described 2005 plugins, 0 paths, in 0.08 seconds
+Info: D:/my_tool/intel_fpga/ip/**/* matched 138 files in 0.08 seconds
+Info: D:/my_tool/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index D:\my_tool\intel_fpga\quartus\sopc_builder\builtin.ipx
+Info: D:\my_tool\intel_fpga\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0.00 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/**/* matched 8 files in 0.00 seconds
+Info: Reading index D:\my_tool\intel_fpga\quartus\common\librarian\factories\index.ipx
+Info: D:\my_tool\intel_fpga\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0.01 seconds
+Info: D:/my_tool/intel_fpga/quartus/common/librarian/factories/**/* matched 4 files in 0.01 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: D:\my_tool\intel_fpga\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0.10 seconds
+Info: D:/my_tool/intel_fpga/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.10 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script D:/my_tool/intel_fpga/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: M_NCO
+Info: TB_Gen: System design is: M_NCO
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property nco_ii_0 CLASS_NAME
+Info: get_instance_assignment nco_ii_0 testbench.partner.map.clk
+Info: get_interface_property in EXPORT_OF
+Info: get_instance_property nco_ii_0 CLASS_NAME
+Info: get_instance_assignment nco_ii_0 testbench.partner.map.in
+Info: get_interface_property out EXPORT_OF
+Info: get_instance_property nco_ii_0 CLASS_NAME
+Info: get_instance_assignment nco_ii_0 testbench.partner.map.out
+Info: get_interface_property rst EXPORT_OF
+Info: get_instance_property nco_ii_0 CLASS_NAME
+Info: get_instance_assignment nco_ii_0 testbench.partner.map.rst
+Info: send_message Info TB_Gen: Creating testbench system : M_NCO_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : M_NCO_tb with all standard BFMs
+Info: create_system M_NCO_tb
+Info: add_instance M_NCO_inst M_NCO 
+Info: set_use_testbench_naming_pattern true M_NCO
+Info: get_instance_interfaces M_NCO_inst
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst in CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst out CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst rst CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: add_instance M_NCO_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property M_NCO_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst clk clockRate
+Info: send_message Warning TB_Gen: clockRate is less than 1Hz; setting to 50MHz
+Warning: TB_Gen: clockRate is less than 1Hz; setting to 50MHz
+Info: set_instance_parameter_value M_NCO_inst_clk_bfm CLOCK_RATE 50000000
+Info: set_instance_parameter_value M_NCO_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property M_NCO_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_clk_bfm
+Info: get_instance_interface_property M_NCO_inst_clk_bfm clk CLASS_NAME
+Info: add_connection M_NCO_inst_clk_bfm.clk M_NCO_inst.clk
+Info: get_instance_interface_property M_NCO_inst rst CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: rst
+Info: TB_Gen: reset_sink found: rst
+Info: get_instance_interface_property M_NCO_inst rst CLASS_NAME
+Info: add_instance M_NCO_inst_rst_bfm altera_avalon_reset_source 
+Info: get_instance_property M_NCO_inst_rst_bfm CLASS_NAME
+Info: get_instance_interface_ports M_NCO_inst rst
+Info: get_instance_interface_port_property M_NCO_inst rst reset_n ROLE
+Info: get_instance_interface_port_property M_NCO_inst rst reset_n ROLE
+Info: set_instance_parameter_value M_NCO_inst_rst_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value M_NCO_inst_rst_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property M_NCO_inst_rst_bfm CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_rst_bfm
+Info: get_instance_interface_property M_NCO_inst_rst_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_rst_bfm reset CLASS_NAME
+Info: get_instance_property M_NCO_inst_rst_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst rst associatedClock
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_clk_bfm
+Info: get_instance_interface_property M_NCO_inst_clk_bfm clk CLASS_NAME
+Info: add_connection M_NCO_inst_clk_bfm.clk M_NCO_inst_rst_bfm.clk
+Info: get_instance_interface_property M_NCO_inst rst CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_rst_bfm
+Info: get_instance_interface_property M_NCO_inst_rst_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_rst_bfm reset CLASS_NAME
+Info: add_connection M_NCO_inst_rst_bfm.reset M_NCO_inst.rst
+Info: get_instance_interface_property M_NCO_inst in CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: in
+Info: TB_Gen: conduit_end found: in
+Info: get_instance_interface_property M_NCO_inst in CLASS_NAME
+Info: add_instance M_NCO_inst_in_bfm altera_conduit_bfm 
+Info: get_instance_property M_NCO_inst_in_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst in associatedClock
+Info: get_instance_interface_parameter_value M_NCO_inst in associatedReset
+Info: get_instance_interface_ports M_NCO_inst in
+Info: get_instance_interface_port_property M_NCO_inst in clken ROLE
+Info: get_instance_interface_port_property M_NCO_inst in clken WIDTH
+Info: get_instance_interface_port_property M_NCO_inst in clken DIRECTION
+Info: get_instance_interface_port_property M_NCO_inst in phi_inc_i ROLE
+Info: get_instance_interface_port_property M_NCO_inst in phi_inc_i WIDTH
+Info: get_instance_interface_port_property M_NCO_inst in phi_inc_i DIRECTION
+Info: set_instance_parameter_value M_NCO_inst_in_bfm CLOCKED_SIGNAL 1
+Info: set_instance_parameter_value M_NCO_inst_in_bfm ENABLE_RESET 1
+Info: set_instance_parameter_value M_NCO_inst_in_bfm SIGNAL_ROLES clken phi_inc_i
+Info: set_instance_parameter_value M_NCO_inst_in_bfm SIGNAL_WIDTHS 1 32
+Info: set_instance_parameter_value M_NCO_inst_in_bfm SIGNAL_DIRECTIONS output output
+Info: get_instance_property M_NCO_inst_in_bfm CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_in_bfm
+Info: get_instance_interface_property M_NCO_inst_in_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_in_bfm conduit CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_in_bfm reset CLASS_NAME
+Info: get_instance_property M_NCO_inst_in_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst in associatedClock
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_clk_bfm
+Info: get_instance_interface_property M_NCO_inst_clk_bfm clk CLASS_NAME
+Info: add_connection M_NCO_inst_clk_bfm.clk M_NCO_inst_in_bfm.clk
+Info: get_instance_interfaces M_NCO_inst_in_bfm
+Info: get_instance_interface_property M_NCO_inst_in_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_in_bfm conduit CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_in_bfm reset CLASS_NAME
+Info: get_instance_property M_NCO_inst_in_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst in associatedReset
+Info: get_instance_interface_property M_NCO_inst rst CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_rst_bfm
+Info: get_instance_interface_property M_NCO_inst_rst_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_rst_bfm reset CLASS_NAME
+Info: add_connection M_NCO_inst_rst_bfm.reset M_NCO_inst_in_bfm.reset
+Info: get_instance_interface_property M_NCO_inst in CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_in_bfm
+Info: get_instance_interface_property M_NCO_inst_in_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_in_bfm conduit CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_in_bfm reset CLASS_NAME
+Info: add_connection M_NCO_inst_in_bfm.conduit M_NCO_inst.in
+Info: get_instance_interface_property M_NCO_inst out CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: out
+Info: TB_Gen: conduit_end found: out
+Info: get_instance_interface_property M_NCO_inst out CLASS_NAME
+Info: add_instance M_NCO_inst_out_bfm altera_conduit_bfm 
+Info: get_instance_property M_NCO_inst_out_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst out associatedClock
+Info: get_instance_interface_parameter_value M_NCO_inst out associatedReset
+Info: get_instance_interface_ports M_NCO_inst out
+Info: get_instance_interface_port_property M_NCO_inst out fsin_o ROLE
+Info: get_instance_interface_port_property M_NCO_inst out fsin_o WIDTH
+Info: get_instance_interface_port_property M_NCO_inst out fsin_o DIRECTION
+Info: get_instance_interface_port_property M_NCO_inst out out_valid ROLE
+Info: get_instance_interface_port_property M_NCO_inst out out_valid WIDTH
+Info: get_instance_interface_port_property M_NCO_inst out out_valid DIRECTION
+Info: set_instance_parameter_value M_NCO_inst_out_bfm CLOCKED_SIGNAL 1
+Info: set_instance_parameter_value M_NCO_inst_out_bfm ENABLE_RESET 1
+Info: set_instance_parameter_value M_NCO_inst_out_bfm SIGNAL_ROLES fsin_o out_valid
+Info: set_instance_parameter_value M_NCO_inst_out_bfm SIGNAL_WIDTHS 18 1
+Info: set_instance_parameter_value M_NCO_inst_out_bfm SIGNAL_DIRECTIONS input input
+Info: get_instance_property M_NCO_inst_out_bfm CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_out_bfm
+Info: get_instance_interface_property M_NCO_inst_out_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_out_bfm conduit CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_out_bfm reset CLASS_NAME
+Info: get_instance_property M_NCO_inst_out_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst out associatedClock
+Info: get_instance_interface_property M_NCO_inst clk CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_clk_bfm
+Info: get_instance_interface_property M_NCO_inst_clk_bfm clk CLASS_NAME
+Info: add_connection M_NCO_inst_clk_bfm.clk M_NCO_inst_out_bfm.clk
+Info: get_instance_interfaces M_NCO_inst_out_bfm
+Info: get_instance_interface_property M_NCO_inst_out_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_out_bfm conduit CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_out_bfm reset CLASS_NAME
+Info: get_instance_property M_NCO_inst_out_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value M_NCO_inst out associatedReset
+Info: get_instance_interface_property M_NCO_inst rst CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_rst_bfm
+Info: get_instance_interface_property M_NCO_inst_rst_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_rst_bfm reset CLASS_NAME
+Info: add_connection M_NCO_inst_rst_bfm.reset M_NCO_inst_out_bfm.reset
+Info: get_instance_interface_property M_NCO_inst out CLASS_NAME
+Info: get_instance_interfaces M_NCO_inst_out_bfm
+Info: get_instance_interface_property M_NCO_inst_out_bfm clk CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_out_bfm conduit CLASS_NAME
+Info: get_instance_interface_property M_NCO_inst_out_bfm reset CLASS_NAME
+Info: add_connection M_NCO_inst_out_bfm.conduit M_NCO_inst.out
+Info: send_message Info TB_Gen: Saving testbench system: M_NCO_tb.qsys
+Info: TB_Gen: Saving testbench system: M_NCO_tb.qsys
+Info: save_system M_NCO_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/M_NCO_tb.qsys
+Info: Done
+Info: qsys-generate E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO.qsys --simulation=VHDL --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VHDL --allow-mixed-language-testbench-simulation --output-directory=E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO\testbench\M_NCO_tb\simulation --family="MAX 10" --part=10M40DAF256C8G
+Progress: Loading testbench/M_NCO_tb.qsys
+Progress: Reading input file
+Progress: Adding M_NCO_inst [M_NCO 1.0]
+Progress: Parameterizing module M_NCO_inst
+Progress: Adding M_NCO_inst_clk_bfm [altera_avalon_clock_source 17.1]
+Progress: Parameterizing module M_NCO_inst_clk_bfm
+Progress: Adding M_NCO_inst_in_bfm [altera_conduit_bfm 17.1]
+Progress: Parameterizing module M_NCO_inst_in_bfm
+Progress: Adding M_NCO_inst_out_bfm [altera_conduit_bfm 17.1]
+Progress: Parameterizing module M_NCO_inst_out_bfm
+Progress: Adding M_NCO_inst_rst_bfm [altera_avalon_reset_source 17.1]
+Progress: Parameterizing module M_NCO_inst_rst_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: M_NCO_tb.M_NCO_inst_clk_bfm: Elaborate: altera_clock_source
+Info: M_NCO_tb.M_NCO_inst_clk_bfm:            $Revision: #3 $
+Info: M_NCO_tb.M_NCO_inst_clk_bfm:            $Date: 2017/09/19 $
+Info: M_NCO_tb.M_NCO_inst_rst_bfm: Elaborate: altera_reset_source
+Info: M_NCO_tb.M_NCO_inst_rst_bfm:            $Revision: #3 $
+Info: M_NCO_tb.M_NCO_inst_rst_bfm:            $Date: 2017/09/19 $
+Info: M_NCO_tb.M_NCO_inst_rst_bfm: Reset is negatively asserted.
+Info: M_NCO_tb: Generating M_NCO_tb "M_NCO_tb" for SIM_VHDL
+Info: M_NCO_inst: "M_NCO_tb" instantiated M_NCO "M_NCO_inst"
+Info: M_NCO_inst_clk_bfm: "M_NCO_tb" instantiated altera_avalon_clock_source "M_NCO_inst_clk_bfm"
+Info: M_NCO_inst_in_bfm: "M_NCO_tb" instantiated altera_conduit_bfm "M_NCO_inst_in_bfm"
+Info: M_NCO_inst_out_bfm: "M_NCO_tb" instantiated altera_conduit_bfm "M_NCO_inst_out_bfm"
+Info: M_NCO_inst_rst_bfm: "M_NCO_tb" instantiated altera_avalon_reset_source "M_NCO_inst_rst_bfm"
+Info: nco_ii_0: "M_NCO_inst" instantiated altera_nco_ii "nco_ii_0"
+Info: M_NCO_tb: Done "M_NCO_tb" with 7 modules, 41 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO_tb.spd --output-directory=E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=E:\Project_Zvision\1_TOWJ\5_Project\5_3_10M40_Coding\FPGA_A5\M_Top_Product_1101\ip\M_NCO_tb.spd --output-directory=E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	6 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under E:/Project_Zvision/1_TOWJ/5_Project/5_3_10M40_Coding/FPGA_A5/M_Top_Product_1101/ip/M_NCO/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Platform Designer system
