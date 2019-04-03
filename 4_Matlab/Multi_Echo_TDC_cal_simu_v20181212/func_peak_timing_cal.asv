@@ -1,0 +1,246 @@
+function [ output_data ] = func_peak_timing_cal(calTypeID, param1)
+
+% func_peak_timing_cal( calTypeID,  width8, width20, width50, width90, ...
+%                                                 tr8T20, tr20T50, tr50T90, ...
+%                                                 tf90T50, tf50T20, tf20T8, ...
+%                                                 tf90T20, tf90T8, tf50T8) 
+%FUNC_PEAK_TIMING_CAL Summary of this function goes here
+%   Detailed explanation goes here
+
+vc = 299792458 ; % speed of light
+delta0 = 0.95*2/vc ; 
+
+time_shift = 0; 
+
+load('Echo_cal_data.mat'); 
+rawdata = Echo_cal_data; 
+
+% calTypeID = 'width8'; 
+% param1 = 1000; 
+typeID = 0; 
+
+%% trigger edge shift delta delay
+delta_tr8 = rawdata(:,4);  % 8%-rising edge cal value 
+delta_tr20 = rawdata(:,7);  % 20%-rising edge cal value 
+delta_tr50 = rawdata(:,10);  % 50%-rising edge cal value 
+delta_tr90 = rawdata(:,13);  % 90%-rising edge cal value 
+
+delta_tf90 = rawdata(:,16);  % 90%-falling edge cal value 
+delta_tf50 = rawdata(:,19);  % 50%-falling edge cal value 
+delta_tf20 = rawdata(:,22);  % 20%-falling edge cal value 
+delta_tf8 = rawdata(:,25);  % 8%-falling edge cal value 
+
+% trigger edge shift delta delay - jitter
+delta_tr8_jitter = rawdata(:,3);  % 8%-rising edge jitter 
+delta_tr20_jitter = rawdata(:,6);  % 20%-rising edge jitter 
+delta_tr50_jitter = rawdata(:,9);  % 50%-rising edge jitter 
+delta_tr90_jitter = rawdata(:,12);  % 90%-rising edge jitter 
+
+delta_tf90_jitter = rawdata(:,15);  % 90%-falling edge jitter 
+delta_tf50_jitter = rawdata(:,18);  % 50%-falling edge jitter 
+delta_tf20_jitter = rawdata(:,21);  % 20%-falling edge jitter 
+delta_tf8_jitter = rawdata(:,24);  % 8%-falling edge jitter 
+
+%% pulse width
+width8 = rawdata(:,26) ;  % 8%-pulse width
+width20 = rawdata(:,28) ; % 20%-pulse width
+width50 = rawdata(:,30) ; % 50%-pulse width
+width90 = rawdata(:,32) ; % 90%-pulse width
+
+width8_jitter = rawdata(:,27) ; % 8%-pulse width jitter
+width20_jitter = rawdata(:,29) ; % 20%-pulse width jitter
+width50_jitter = rawdata(:,31) ; % 50%-pulse width jitter
+width90_jitter = rawdata(:,33) ; % 90%-pulse width jitter
+
+%% rising/falling edge
+tr8T20 = - delta_tr20 + delta_tr8 ; 
+tr20T50 = - delta_tr50 + delta_tr20 ; 
+tr50T90 = - delta_tr90 + delta_tr50 ; 
+
+tf90T50 = - delta_tf50 + delta_tf90 ; 
+tf50T20 = - delta_tf20 + delta_tf50 ; 
+tf20T8 = - delta_tf8 + delta_tf20 ; 
+
+tf90T20 = - delta_tf20 + delta_tf90 ; 
+tf90T8 = - delta_tf8 + delta_tf90 ; 
+tf50T8 = - delta_tf8 + delta_tf50 ; 
+
+tr8T20_jitter   = sqrt( delta_tr20_jitter.^2 + delta_tr8_jitter.^2 ); 
+tr20T50_jitter  = sqrt( delta_tr50_jitter.^2 + delta_tr20_jitter.^2 ); 
+tr50T90_jitter   = sqrt( delta_tr90_jitter.^2 + delta_tr50_jitter.^2 ); 
+
+tf90T50_jitter  = sqrt( delta_tf50_jitter.^2 + delta_tf90_jitter.^2 ); 
+tf50T20_jitter  = sqrt( delta_tf50_jitter.^2 + delta_tf20_jitter.^2 ); 
+tf20T8_jitter   = sqrt( delta_tf20_jitter.^2 + delta_tf8_jitter.^2 ); 
+
+tf90T20_jitter  = sqrt( delta_tf20_jitter.^2 + delta_tf90_jitter.^2 ); 
+tf90T8_jitter   = sqrt( delta_tf8_jitter.^2 + delta_tf90_jitter.^2 ); 
+tf50T8_jitter   = sqrt( delta_tf8_jitter.^2 + delta_tf50_jitter.^2 ); 
+
+
+%%
+switch calTypeID
+    case {1, 'width8'}
+        typeID = 1; 
+        xIntercept = param1;         
+        xx_data = width8 ; 
+        yy_data = delta_tr8;      
+        xx_jitter_data = width8_jitter; 
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {2, 'width20'}
+        typeID = 2;
+        xIntercept = param1; 
+        xx_data = width20 ; 
+        yy_data = delta_tr20;   
+        xx_jitter_data = width20_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {3, 'width50'}
+        typeID = 3;
+        xIntercept = param1; 
+        xx_data = width50 ; 
+        yy_data = delta_tr50;   
+        xx_jitter_data = width50_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {4, 'width90'}
+        typeID = 4;
+        xIntercept = param1; 
+        xx_data = width90 ; 
+        yy_data = delta_tr90;   
+        xx_jitter_data = width90_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {5, 'tr8T20'}
+        typeID = 5;
+        xIntercept = param1; 
+        xx_data = tr8T20 ; 
+        yy_data = delta_tr20;   
+        xx_jitter_data = tr8T20_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID);         
+    case {6, 'tr20T50'}
+        typeID = 6;
+        xIntercept = param1; 
+        xx_data = tr20T50 ; 
+        yy_data = delta_tr50;   
+        xx_jitter_data = tr20T50_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {7, 'tr50T90'} 
+        typeID = 7;
+        xIntercept = param1; 
+        xx_data = tr50T90 ; 
+        yy_data = delta_tr90;   
+        xx_jitter_data = tr50T90_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {8, 'tf90T50'}
+        typeID = 8;
+        xIntercept = param1; 
+        xx_data = tf90T50 ; 
+        yy_data = delta_tf90;   
+        xx_jitter_data = tf90T50_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {9, 'tf50T20'}
+        typeID = 9;
+        xIntercept = param1; 
+        xx_data = tf50T20 ; 
+        yy_data = delta_tf50;   
+        xx_jitter_data = tf50T20_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {10, 'tf20T8'}
+        typeID = 10;
+        xIntercept = param1; 
+        xx_data = tf20T8 ; 
+        yy_data = delta_tf20;   
+        xx_jitter_data = tf20T8_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {11, 'tf90T20'}
+        typeID = 11;
+        xIntercept = param1; 
+        xx_data = tf90T20 ; 
+        yy_data = delta_tf90;   
+        xx_jitter_data = tf90T20_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {12, 'tf90T8'}
+        typeID = 12;
+        xIntercept = param1; 
+        xx_data = tf90T8 ; 
+        yy_data = delta_tf90;   
+        xx_jitter_data = tf90T8_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {13, 'tf50T8'}
+        typeID = 13;
+        xIntercept = param1; 
+        xx_data = tf50T8 ; 
+        yy_data = delta_tf50;   
+        xx_jitter_data = tf50T8_jitter;
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {14, 'fixed-rising-cal'}
+        typeID = 14;
+        time_shift = delta0 - 2565*10e-12 ; 
+        fprintf('Current Calibration Method : %s .\n', calTypeID); 
+    case {15, 'fixed-falling-cal'}
+        typeID = 15;
+        time_shift = delta0 - 2892*10e-12 ;
+        fprintf('Current Calibration Method : %s .\n', calTypeID);        
+end % end switch
+
+%% data trimming
+xx = xx_data; 
+yy = yy_data; 
+xx_jitter = xx_jitter_data; 
+zz_data  = [xx_data , yy_data, xx_jitter_data] ; 
+
+ind_zero = (xx <= 0); 
+xx(ind_zero) = []; 
+yy(ind_zero) = []; 
+xx_jitter(ind_zero) = []; 
+
+if (typeID >= 5)
+    ind_zero = (xx > 1000);
+    xx(ind_zero) = [];
+    yy(ind_zero) = [];
+    xx_jitter(ind_zero) = [];
+end
+zz = [xx, yy, xx_jitter] ; 
+
+% figure(1); 
+% % plot(xx, yy); 
+% errorbar( yy, xx, xx_jitter); 
+% xlabel('time calibration (10ps)'); ylabel('Width/Rising/Falling-Edge (10ps)'); 
+
+xmax = max(xx); 
+xmin = min(xx); 
+%% fitting
+[xData, yData] = prepareCurveData( xx, yy );
+
+% Set up fittype and options.
+ft = fittype( 'poly9' );
+
+% Fit model to data.
+[fitresult, gof] = fit( xData, yData, ft );
+
+% % Plot fit with data.
+% figure( 2 );
+% h = plot( fitresult, xData, yData );
+% legend( h, 'yy vs. xx', 'untitled fit 1', 'Location', 'NorthEast' );
+% % Label axes
+% xlabel( 'Width/Rising/Falling-Edge (10ps)'); 
+% ylabel( 'time calibration (10ps)'); 
+% grid on
+
+if xIntercept > xmax 
+    xIntercept = xmax; 
+else if xIntercept < xmin
+        xIntercept = xmin; 
+    end
+end        
+
+% err_max = round(max(abs( yData - fitresult(xData)))); 
+% err_max
+
+time_shift = fitresult(xIntercept) ; 
+% figure(1); hold on; plot(time_shift,xIntercept,  '*'); hold off; 
+
+output_data = time_shift * 10e-12; 
+
+fprintf('cal value : %g ns.\n', [output_data*1e9, param1);  
+
+
+end
